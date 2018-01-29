@@ -1,0 +1,346 @@
+@charset "utf-8";
+.padding-left-15 {
+        padding-left: 15px;
+}
+.text-align-c {
+        text-align: center;
+}
+.float-r {
+        float: right;
+}
+.float-l {
+        float: left;
+}
+.padding-l-30 {
+        padding-left: 30px!important;
+}
+.margin-t-20 {
+        margin-top: 20px!important;
+}
+.font-16 {
+        font-size: 16px!important;
+}
+.margin-l-120 {
+        margin-left: 120px!important;
+}
+.margin-l-10 {
+        margin-left: 10px;
+}
+.vertical-align-m {
+        vertical-align: middle;
+}
+/* CSS Document */
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, ul, li, ol, dl, span, input, form, select, button, nav, img, footer, section {
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
+}
+body {
+        font-family: Microsoft YaHei!important;
+        -webkit-font-smoothing: antialiased !important;
+        font-size: 12px;
+        line-height: 1.5;
+}
+ul, li, ol {
+        list-style: none;
+}
+a {
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+}
+.clear::after {
+        content: '.';
+        height: 0;
+        display: block;
+        visibility: hidden;
+        clear: both;
+}
+.clear {
+ *zoom: 1;
+}
+.account-title {
+        margin: 30px 0;
+        font-size: 18px;
+}
+.account-title-btn {
+        margin: 26px 0;
+        font-size: 18px;
+}
+.account-nav-ul {
+        padding-bottom: 1px;
+}
+.account-nav-li {
+        margin-left: 30px;
+        margin-bottom: 0;
+}
+.account > .nav-tabs > li.active > a, .account > .nav-tabs > li.active > a:hover, .account > .nav-tabs > li.active > a:focus {
+        color: #1188f6;
+        font-size: 13px;
+        cursor: default;
+        background-color: #fff;
+        border: inherit;
+        border-bottom: 2px solid #ddd;
+        border-bottom-color: #1188f6;
+}
+.account > .nav > li > a {
+        color: #676a6c;
+        font-size: 13px;
+        position: relative;
+        display: block;
+        padding: 10px 0;
+}
+.account > .nav > li > a:hover, .account > .nav > li > a:focus {
+        background-color: #FFFFFF;
+        border-color: #FFFFFF;
+}
+.account-table {
+        margin-left: 0!important;
+        margin-right: 0!important;
+        margin-top: 30px;
+        border: 1px solid #ddd;
+}
+.account-table-title {
+        margin-bottom: 0!important;
+        background-color: #F5F5F5;
+}
+.account-table > .table > thead > tr > th {
+        vertical-align: bottom;
+        border-bottom: none;
+}
+.account-table > .table > thead > tr > th, .account-table > .table > tbody > tr > th, .account-table > .table > tfoot > tr > th, .account-table > .table > thead > tr > td, .account-table > .table > tbody > tr > td, .account-table > .table > tfoot > tr > td {
+        padding: 10px;
+        line-height: 1.42857143;
+        vertical-align: middle;
+        border-top: none;
+        color: #676a6c;
+        font-size: 12px;
+}
+.account-table > .table-striped > tbody > tr:nth-of-type(odd) {
+        background-color: #ffffff!important;
+}
+.account-table-th {
+        height: 40px;
+}
+.account-table-th1 {
+        width: 240px;
+        color: black!important;
+}
+.account-table-th2 {
+        width: 200px;
+        color: black!important;
+}
+.account-table-th3 {
+        width: 90px;
+        color: black!important;
+}
+.account-table-th3 {
+        width: 100px;
+        color: black!important;
+}
+.account-table-tb > tr > td {
+        font-family: "Microsoft YaHei"!important;
+        -webkit-font-smoothing: antialiased!important;
+}
+.account-table-th11 {
+        width: 140px;
+        color: black!important;
+}
+.account-table-th22 {
+        width: 100px;
+        color: black!important;
+}
+.account-table-th33 {
+        width: 200px;
+        color: black!important;
+}
+.account-table-operate {
+        color: #1188f6;
+        font-size: 12px;
+        border: 0!important;
+        outline: none!important;
+}
+.font-size-36 {
+        font-size: 36px!important;
+        margin-top: -11px!important;
+}
+.account-star-red {
+        color: red;
+        margin-right: 5px;
+}
+.height-34 {
+        height: 34px;
+        line-height: 34px;
+}
+.account-model-tip {
+        margin-top: 5px;
+        color: #999;
+        font-size: 12px;
+        line-height: 12px;
+}
+.work > input[type="radio"], .work > input[type="checkbox"] {
+        margin: 10px 10px 0;
+        line-height: normal;
+}
+.account-submit > .col-xs-6 > .btn-primary {
+        color: #fff;
+        background-color: #07aab2!important;
+        border-color: #07aab2!important;
+}
+.account-submit > .col-xs-6 > .btn {
+        box-sizing: border-box;
+        height: 32px;
+        min-width: 90px;
+        font-size: 14px;
+        display: inline-block;
+        padding: 0 18px;
+        text-align: center;
+        border-radius: 2px;
+        border: none;
+        line-height: 32px;
+        outline: none;
+}
+.account-submit > .col-xs-6 > .btn-default {
+        border: 1px solid #ddd;
+        background-color: #fff;
+        color: #333;
+}
+.account-submit > .col-xs-6 > .btn-default {
+        box-sizing: border-box;
+        height: 32px;
+        min-width: 90px;
+        font-size: 14px;
+        display: inline-block;
+        padding: 0 18px;
+        text-align: center;
+        border-radius: 2px;
+        line-height: 30px;
+        outline: none;
+}
+.margin-t-b {
+        margin-top: 30px;
+        margin-bottom: 80px;
+}
+.account-select {
+        width: 370px;
+        height: 32px;
+        line-height: 32px;
+        border: 1px solid #eee;
+        color: #333;
+        box-sizing: border-box;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        min-width: 150px;
+        border-radius: 0;
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+}
+.modal-body > .row > .col-xs-8 > .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #eee;
+        color: #333;
+        box-sizing: border-box;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        min-width: 150px;
+        border-radius: 0;
+        box-shadow: none;
+}
+.modal-body > .row > .col-xs-8 > .row > .col-xs-7 > .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #eee;
+        color: #333;
+        box-sizing: border-box;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        min-width: 150px;
+        border-radius: 0;
+        box-shadow: none;
+}
+.account-waining {
+        height: 32px;
+        width: 32px;
+        margin-left: 50px;
+}
+.height-100 {
+        height: 100px;
+        line-height: 100px;
+}
+.margin-l-10 {
+        margin-left: 10px;
+}
+.btn-important {
+        box-sizing: border-box;
+        height: 32px;
+        min-width: 90px;
+        font-size: 14px;
+        display: inline-block;
+        padding: 0 18px;
+        text-align: center;
+        border-radius: 2px;
+        border: none;
+        line-height: 32px;
+        outline: none;
+}
+.btn-important, .btn-important:focus, .btn-important:link, .btn-important:visited {
+        background-color: #07aab2;
+        color: #fff;
+        border-color: #07aab2;
+}
+.account-btn-img {
+        margin-top: -4px;
+}
+.account-title > .btn-primary:active:hover, .account-title > .btn-primary.active:hover, .account-title > .open > .dropdown-toggle.btn-primary:hover, .account-title > .btn-primary:active:focus, .account-title > .btn-primary.active:focus, .account-title > .open > .dropdown-toggle.btn-primary:focus, .account-title > .btn-primary:active.focus, .account-title > .btn-primary.active.focus, .account-title > .open > .dropdown-toggle.btn-primary.focus {
+        color: #fff;
+        background-color: #07aab2;
+        border-color: #07aab2;
+}
+.account-title > .btn-primary:hover {
+        color: #fff;
+        background-color: #51c3c9;
+        border-color: #51c3c9;
+}
+.account-title > .btn-primary:active, .btn-primary.active, .account-title > .open > .dropdown-toggle.btn-primary {
+        color: #fff;
+        background-color: #07aab2;
+        border-color: #07aab2;
+}
+.account-title > .btn-primary:focus, .account-title > .btn-primary.focus {
+        color: #fff;
+        background-color: #07aab2;
+        border-color: #07aab2;
+}
+.account-table-tb a:hover, .account-table-tb a:focus {
+        color: #1188f6;
+        text-decoration: underline;
+}
+.col-xs-8 label {
+        color: #888;
+        font-size: 14px;
+        margin-left: 80px;
+        font-weight: normal;
+        margin-top: 10px;
+}
+.col-xs-8 span {
+        margin-left: 10px;
+}
+
+

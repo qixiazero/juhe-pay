@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap {
+        width: 100%;
+}
+.content {
+        width: 1000px;
+        background: #fff;
+        margin: auto;
+}
+.top-text {
+        width: 100%;
+        padding-left: 30px;
+        border-bottom: 1px solid #eee;
+}
+.top-text {
+        font-size: 18px;
+        color: #333;
+        line-height: 80px;
+        height: 80px;
+        margin-bottom: 30px;
+}
+.top-title {
+        margin-left: 30px;
+        font-size: 14px;
+        color: #888;
+        border-left: 4px solid #36F;
+        padding-left: 10px;
+}
+.second-title {
+        font-size: 14px;
+        color: #333;
+        margin-left: 70px;
+        line-height: 2;
+        text-align: right;
+}
+.second-content {
+        font-size: 14px;
+        color: #888;
+        line-height: 2;
+        margin: auto 20px;
+}
+.user-number {
+        margin-left: 84px;
+}
+.second-content1 {
+        font-size: 14px;
+        color: #888;
+        line-height: 2;
+        margin-right: 20px;
+        margin-left: -10px;
+}
+.edit {
+        font-size: 14px;
+        line-height: 2;
+        color: #1188f6;
+}

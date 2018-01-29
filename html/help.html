@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>帮助中心</title>
+<link rel="stylesheet" type="text/css" href="../css/help.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">  
+                $(document).ready(function() {  
+                                      
+                      
+                    $("select").customComboBox({  
+  
+                        tipText : "Enter Your Value",  
+  
+                        tipClass : "mytipclass",  
+  
+                        allowed : /[A-Za-z0-9$.s]/,  
+  
+                        notallowed : /[<>]/,  
+  
+                        index : 'last',  
+  
+                        isEditing : function(el, status, value) {  
+                            if (typeof window.console!='object') { return; }  
+                            console.info('Editing status changed to (', status, ') on ', el, ' combo box and the selected value is "', value, '"');  
+                        },  
+                        onKeyDown : function(el, character, fulltext) {  
+                            if (typeof window.console!='object') { return; }  
+                            console.info('The character (', character, ') was just typed into ', el, ' combo box and the complete text is now "', fulltext, '"');  
+                        },  
+                        onDelete : function(el, fulltext) {  
+                            if (typeof window.console!='object') { return; }  
+                            console.info('A character was deleted from ', el, ' combo box and the complete text is now "', fulltext, '"');  
+                        }  
+                    });  
+                      
+                    $("form p").find('input').on('click',function(e) {  
+                         var sel = $(e.currentTarget).prev('select');  
+                         var name = sel.attr('name').toUpperCase();  
+                         var val = sel.find('option:selected').val();  
+                         $("#result").text(name+" combo box value is " + val);  
+                    });  
+                      
+  
+                }); 
+				</script> 
+  
+
+</head>
+
+<body>
+
+<div class="wrap">
+    <div class="content">
+    
+    <!--以下是标题-->
+        <div class="top-text">
+        	<span>帮助中心</span>
+        </div>
+      <!--  以下是内容-->
+      <div class="row">
+      	<div class="col-xs-1">*类目</div>
+        <div class="col-xs-6">
+			<form>  
+                 
+               <select name='Plugins' style="width:200px;">  
+                   <option value="jQueryScript.Net">请选择</option>  
+                   <option value="jQuery.Com"></option>  
+                   <option value="Google.com"></option>  
+               </select>  
+              
+           </form>  
+        </div>
+        <div class="col-xs-5">
+        	 <button type="submit" class="btn btn-primary">查询</button>
+        </div>
+      </div>
+       <!--以下是列表 -->
+    <div class="row">
+    	<div class="col-xs-12">
+        	   <table class="table table-striped ">
+	<tbody>
+		<tr>
+			<td>发布时间</td>
+			<td>文章标题</td>
+			<td>所属类目</td>
+            <td>发布人</td>
+            <td>操作</td>
+		</tr>
+	</tbody>
+</table>
+        </div>
+    </div>
+       <!--以下是图片-->
+       <div class="row">
+       		<div class="col-xs-4"></div>
+            <div class="col-xs-4"><img src="../img/3.png" width="100" height="100"></div>
+       </div> 
+       <div class="row">
+       		<div class="col-xs-4"></div>
+            <div class="col-xs-4">无符合条件数据</div>
+       </div>       
+       
+    </div>
+</div>
+</body>
+</html>

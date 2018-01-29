@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会员公众号列表</title>
+<link rel="stylesheet" type="text/css" href="../css/member-public.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">  
+                $(document).ready(function() {  
+                                      
+                      
+                    $("select").customComboBox({  
+  
+                        tipText : "Enter Your Value",  
+  
+                        tipClass : "mytipclass",  
+  
+                        allowed : /[A-Za-z0-9$.s]/,  
+  
+                        notallowed : /[<>]/,  
+  
+                        index : 'last',  
+  
+                        isEditing : function(el, status, value) {  
+                            if (typeof window.console!='object') { return; }  
+                            console.info('Editing status changed to (', status, ') on ', el, ' combo box and the selected value is "', value, '"');  
+                        },  
+                        onKeyDown : function(el, character, fulltext) {  
+                            if (typeof window.console!='object') { return; }  
+                            console.info('The character (', character, ') was just typed into ', el, ' combo box and the complete text is now "', fulltext, '"');  
+                        },  
+                        onDelete : function(el, fulltext) {  
+                            if (typeof window.console!='object') { return; }  
+                            console.info('A character was deleted from ', el, ' combo box and the complete text is now "', fulltext, '"');  
+                        }  
+                    });  
+                      
+                    $("form p").find('input').on('click',function(e) {  
+                         var sel = $(e.currentTarget).prev('select');  
+                         var name = sel.attr('name').toUpperCase();  
+                         var val = sel.find('option:selected').val();  
+                         $("#result").text(name+" combo box value is " + val);  
+                    });  
+                      
+  
+                }); 
+				</script> 
+ <script>
+    $(function () {
+        $('#myTab a:first').tab('show')
+    })
+</script>
+
+</head>
+
+<body>
+<div class="wrap">
+    <div class="content">
+    
+    <!--以下是标题-->
+        <div class="top-text">
+        	<span>会员公众号地址</span>
+        </div>
+      <!--  以下是内容-首次交易门店-->
+	  <div class="row">
+	  	<div class="col-xs-5">
+			<div class="row ewm">商家会员申请二维码</div>
+			<div class="row"><img src="../img/8.jpg" width="234" height="236"></div>
+		</div>
+	  	<div class="col-xs-7">
+			<div class="row">会员功能绑定商家公众号请复制以下链接地址:</div>
+			<div class="row">
+				
+				<textarea readonly>http://openapi.caibaopay.com/qr/vipv3.htm?userId=185645</textarea>
+				<button type="button" class="btn" data-clipboard-text="http://openapi.caibaopay.com/qr/vipv3.htm?userId=185645"  onclick="myCopy()">复制</button>
+				
+			
+			</div>
+			<div class="list">
+			<div class="row">温馨提示：</div>
+			<div class="row">商家账号登陆APP可以在“门店管理”中的门店详情内查看当前门店会员申请二维码</div>
+			<div class="row">店长、收银员账号登陆APP在“我的”页面中查看当前门店会员申请二维码</div>
+			</div>	
+		</div>
+	  </div>
+    
+    
+  
+</div>
+</div>
+</body>
+</html>

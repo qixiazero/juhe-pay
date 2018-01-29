@@ -1,0 +1,227 @@
+@charset "utf-8";
+.padding-l-15 {
+	padding-left: 15px!important;
+}
+.padding-l-20 {
+	padding-left: 20px!important;
+}
+.text-align-c {
+	text-align: center!important;
+}
+.float-r {
+	float: right!important;
+}
+.float-l {
+	float: left!important;
+}
+.padding-l-30 {
+	padding-left: 30px!important;
+}
+.margin-t-20 {
+	margin-top: 20px!important;
+}
+.font-16 {
+	font-size: 16px!important;
+}
+.margin-l-120 {
+	margin-left: 120px!important;
+}
+.margin-l-10 {
+	margin-left: 10px;
+}
+.vertical-align-m {
+	vertical-align: middle!important;
+	overflow: hidden;
+}
+.border-r-1 {
+	border-right: 1px solid #ddd;
+}
+.margin-r-5 {
+	margin-right: 5px;
+	margin-top: -1px;
+}
+.margin-l-025 {
+	margin-left: -25px;
+}
+.padding-b-0 {
+	padding-bottom: 0!important;
+}
+.padding-t-0 {
+	padding-top: 0!important;
+}
+/* CSS Document */
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, ul, li, ol, dl, span, input, form, select, button, nav, img, footer, section {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+ul, li, ol {
+	list-style: none;
+}
+a {
+	color: #333;
+	text-decoration: none;
+	font-size: 16px;
+}
+.clear::after {
+	content: '.';
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.clear {
+ *zoom: 1;
+}
+.signInfo-title-div {
+	height: 80px;
+	line-height: 80px;
+	padding: auto 30px;
+	font-size: 18px;
+	margin-left: -30px!important;
+	margin-right: -30px!important;
+	border-bottom: 1px solid #ddd;
+}
+.signInfo-title {
+	margin-left: 15px!important;
+}
+.signInfo-table-title {
+	font-size: 12px;
+	margin-top: 20px;
+	border: 1px solid #ddd;
+	
+}
+.signInfo-table-th {
+	background-color: #F5F5F5;
+}
+.table > .signInfo-table-th > tr > th {
+	border-bottom: none!important;
+}
+.signInfo-table-title > thead > tr > th, .signInfo-table-title > tbody > tr > th, .signInfo-table-title > tfoot > tr > th, .signInfo-table-title > thead > tr > td, .signInfo-table-title > tbody > tr > td, .signInfo-table-title > tfoot > tr > td {
+	padding: 15px 0 15px 20px!important;
+}
+.signInfo-thead-th1 {
+	width: 65px;
+}
+.signInfo-thead-th2 {
+	width: 100px;
+}
+.signInfo-thead-th3 {
+	width: 390px;
+	max-width: 390px;
+}
+.signInfo-thead-th4 {
+	width: 95px;
+}
+.signInfoList-rate a {
+	text-decoration: none;
+    cursor: pointer;
+    color: #1188f6;
+	font-size: 12px;
+}
+.signInfoList-rate a:hover, a:focus {
+    color: #1188f6;
+    text-decoration: underline;
+}
+.modal-body > .row > .col-xs-5 > .form-control {
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+	background-color: #fff;
+    background-image: none;
+	border: 1px solid #eee;
+    color: #333;
+    box-sizing: border-box;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    min-width: 150px;
+    border-radius: 0;
+	box-shadow: none;
+}
+.modal-body > .row > .col-xs-5 > .row > .col-xs-7 > .form-control {
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+	background-color: #fff;
+    background-image: none;
+	border: 1px solid #eee;
+    color: #333;
+    box-sizing: border-box;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    min-width: 150px;
+    border-radius: 0;
+	box-shadow: none;
+}
+.height-34 {
+	height: 34px;
+	line-height: 34px;
+}
+.signInfoList-star-red {
+	color: red;
+	margin-right: 5px;
+}
+.margin-t-b {
+	margin-top: 80px;
+	margin-bottom: 100px;
+	
+}
+.account-submit > .col-xs-6 > .btn-primary {
+	color: #fff;
+    background-color: #07aab2!important;
+    border-color: #07aab2!important;
+}
+.account-submit > .col-xs-6 > .btn {
+	box-sizing: border-box;
+    height: 32px;
+    min-width: 90px;
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 18px;
+    text-align: center;
+    border-radius: 2px;
+    border: none;
+    line-height: 32px;
+    outline: none;
+}
+.account-submit > .col-xs-6 > .btn-default {
+	border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+}
+.account-submit > .col-xs-6 > .btn-default {
+	box-sizing: border-box;
+    height: 32px;
+    min-width: 90px;
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 18px;
+    text-align: center;
+    border-radius: 2px;
+    line-height: 30px;
+    outline: none;
+}
+.reminder{font-size:12px;
+color:#888;
+line-height:3;
+margin-left:200px;}
+.message{margin-top:60px;
+  position: relative;
+  left: -102px;
+  padding-bottom:20px;
+ 
+}
+
+  
+.message img{margin-right:10px;}
+.message .p1{margin-bottom:20px;}
+
+

@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商户信息</title>
+<link rel="stylesheet" type="text/css" href="../css/user-message.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.edit>.btn-primary {
+	color: #1188f6;
+	background-color: #fff;
+	border:hidden;
+        font-size: 14px!important;
+        padding: 5px!important;
+}
+.edit>.btn {
+	padding: auto;
+	border:0px;
+	outline:none;
+}
+.edit>.btn-primary:hover {
+	color: #1188f6;
+	background-color: #fff;
+	border: none;
+}
+.edit>.btn:hover, .edit>.btn:focus, .edit> .btn.focus {
+	text-decoration: none;
+	border:hidden;
+}
+.edit>.btn-primary:active, .edit>.btn-primary.active, .edit>.open > .dropdown-toggle.btn-primary {
+	color: #1188f6;
+	background-color: rgba(f, f, f, 0);
+	border-color: none;
+	border:hidden;
+}
+.edit>.btn:active, .edit>.btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);
+} 
+/*以上是编辑按钮的修饰*/
+
+.edit-name>.modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+	text-align: center;
+	color: #333;
+}
+.user-name label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 0;
+	color: #333;
+}
+.user-name span {
+	color: #f00;
+	margin-right: 5px;
+}
+.user-name input {
+	font-family: inherit;
+	font-size: 12px;
+	line-height: inherit;
+	width: 197px;
+	margin-right: 10px;
+}
+.middle>.modal-body {
+	margin-bottom: 30px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.foot>.modal-footer {
+	border-top: 1px solid #fff;
+	margin: auto;
+	text-align: center;
+}
+.foot>.modal-footer>button {
+	width: 100px;
+	background: #1188f6;
+	border: 1px solid #1188f6;
+}
+.foot>.madal-footer>.cancel>button {
+	background: #fff;
+	border: 1px solid #666;
+}
+.forget-psw {
+	font-size: 16px;
+	color: #1188f6;
+}
+.user-name>a {
+	color: #1188f6;
+	text-decoration: none;
+}
+.user-name>a:hover, .user-name>a:focus {
+	color: #1188f6;
+	text-decoration: none;
+}
+.second-main {
+	margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="content">
+        <div class="top-text">
+        	<span>商户信息</span>
+        </div>
+        <div class="user-message">
+            <ul>
+                <li> <span class="top-title">基本信息</span>
+                    <ul>
+                        <li> 
+                            <span class="second-title user-number">商户号</span>
+                            <span class="second-content">H39305510000001</span>							
+                        </li>
+                        <li>
+                        <span class="second-title ">商户名称</span>
+                        <span class="second-content">乐享礼品生活服务有限公司</span>
+                        <span class="edit">		
+                        <button class="btn btn-primary btn-lg" 
+                        data-toggle="modal" data-target="#myModal1">编辑</button>
+                       </span>
+                        
+                        
+                        </li>
+                        <li>
+                        <span class="second-title">行业类目</span><span class="second-content">购物
+                        </span>
+                        <span class="second-content1">本地购物</span> 
+                        <span class="edit">
+                            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target=
+                            "#myModal"> 编辑 </button>
+                        </span> </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 以上是基本信息结构 -->
+            <ul class="second-main">
+                <li> <span class="top-title">所属服务机构</span>
+                    <ul>
+                        <li> <span class="second-title user-number">服务商</span><span class="second-content">H393</span> </li>
+                        <li><span class="second-title ">客服电话</span><span class="second-content"></span></li>
+                        <li><span class="second-title">业务经理</span><span class="second-content">吴凯</span> </li>
+                    </ul>
+                </li>
+            </ul>
+            
+         <!--以上是所属服务机构结构  --> 
+          <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" 
+                            aria-labelledby="myModalLabel-name" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="edit-name modal-header">
+                                           <button type="button" class="close" data-dismiss="modal" 
+                                           aria-hidden="true"> &times; </button>
+                                            <h4 class="modal-title" id="myModalLabel-name"> 编辑商户名称 
+                                            </h4>
+                                        </div>
+                                        <div class="middle">
+                                            <div class="modal-body">
+                                                <p class="user-name"> <span>*</span>
+                                                    <label for="user">商户名称：</label>
+                                                    <input type="text" name="user" id="user"  value="" placeholder="乐享商户服务有限公司" autofocus autocomplete="on" required>
+                                                </p>
+                                                <p class="user-name"> <span>*</span>
+                                                    <label for="psw">操作密码：</label>
+                                                    <input type="password" name="psw" id="psw" value="" placeholder="为确保账户安全，请输入操作密码" required> 
+                                                           <span class="forget-psw"><a href="security-setting.html">忘记密码</a></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="foot">
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary"> 确定 </button>
+                                                <span class="cancel">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal" style="width:100px;">取消 </button>
+                                                </span> </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content --> 
+                                </div>
+                                <!-- /.modal --> 
+                            </div>  
+            
+            <!--以上是商户名称编辑模态框-->
+            <!-- 模态框（Modal） -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+                            aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="edit-name modal-header">
+                                           <button type="button" class="close" data-dismiss="modal" 
+                                           aria-hidden="true"> &times; </button>
+                                            <h4 class="modal-title" id="myModalLabel"> 编辑行业类目 
+                                            </h4>
+                                        </div>
+                                        <div class="middle">
+                                            <div class="modal-body">
+                                                <p class="user-name"> <span>*</span>
+                                                    <label for="user">行业类目：</label>
+                                                    <input type="text" name="user" id="user"  value="" placeholder="购物 本地购物" autofocus autocomplete="on" required>
+                                                </p>
+                                                <p class="user-name"> <span>*</span>
+                                                    <label for="psw">操作密码：</label>
+                                                    <input type="password" name="psw" id="psw" value="" placeholder="为确保账户安全，请输入操作密码" required   <span class="forget-psw"><a href="security-setting.html">忘记密码</a></span> </p>
+                                            </div>
+                                        </div>
+                                        <div class="foot">
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary"> 确定 </button>
+                                                <span class="cancel">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal" style="width:100px;">取消 </button>
+                                                </span> </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content --> 
+                                </div>
+                                <!-- /.modal --> 
+                            </div>
+                            <!--以上是行业类目编辑模态框-->
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>

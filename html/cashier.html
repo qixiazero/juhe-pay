@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>我的门店</title>
+<link rel="stylesheet" type="text/css" href="../css/cashier.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="myStore container">
+	<div class="row myStore-title-div">
+		<div class="col-xs-6 padding-l-r-30">
+			<div>收银员</div>
+		</div>
+		<div class="col-xs-6 myStore-title padding-l-r-30">
+			<a class="btn btn-primary float-r" href="add-cashier.html" target="main">
+				<img src="../img/add.png" alt="">
+                                新增收银员
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4">
+                        <div class="row">
+                                <div class="col-xs-4 myStorm-lable-name">
+                                        <div class="float-r height-34 margin-t-15">收银员名称：</div>
+                                </div>
+                                <div class="col-xs-8 padding-l-0 search-btn">
+                                        <input type="text" class="form-control margin-t-15 lable-name" placeholder="请输入门店名称">
+                                </div>
+                        </div>
+                </div>
+		<div class="col-xs-5">
+                        <div class="row">
+                                <div class="col-xs-2 myStorm-lable-name width-100">
+                                        <div class="float-r height-34 margin-t-15">归属门店：</div>
+                                </div>
+                                <div class="col-xs-8 padding-l-0 search-btn">
+                                        <input type="text" class="form-control margin-t-15 lable-address" placeholder="请选择省市区">
+                                </div>
+                        </div>
+                </div>
+		<div class="col-xs-3 padding-l-0 search-btn margin-t-15">
+                        <button class="btn-primary btn query-btn" id="queryBtn">查询</button>
+		</div>
+	</div>
+	<div class="row margin-t-40">
+		<div class="col-xs-1 height-34 lable-select">
+			已选(0)
+		</div>
+		<div class="col-xs-11 down-erweima">
+			<button class="margin-r-30 btn-important btn float-l" href="#add-SubAccount" data-toggle="modal">
+				下载二维码
+			</button>
+		</div>
+	</div>
+	<!--列表-->
+	<div class="account-table">
+		<table class="tab-pane fade in active table table-striped account-table-title  font-size-12" id="home">
+			<thead class="account-table-th">
+				<tr>
+					<th class="padding-l-30 width-80">
+						<input name="Fruit" type="checkbox" value="" />
+					</th>
+					<th class="width-100">创建时间</th>
+					<th class="width-130">收款二维码|收银员</th>
+					<th class="width-240">归属门店</th>
+					<th class="width-100">权限</th>
+					<th class="width-100">退款期限</th>
+					<th class="width-100">状态</th>
+					<th class="">操作</th>
+				</tr>
+			</thead>
+			<tbody class="account-table-tb">
+				<tr>
+					<td class="padding-l-30">
+						<input name="Fruit" type="checkbox" value="" />
+					</td>
+					<td>2018-01-10</td>
+					<td>Hzwl002(杭州武林2号席)</td>
+					<td>杭州武林店</td>
+					<td>收银员</td>
+					<td>-</td>
+					<td>在职</td>
+					<td class="myStore-rate">
+                                                <a data-toggle="modal" data-target="#myModal-rate-detail" href="">详情</a>
+                                                <a href="edite-cashier.html" target="main">编辑</a>
+					</td>
+				</tr>
+                                
+                                <tr>
+					<td class="padding-l-30">
+						<input name="Fruit" type="checkbox" value="" />
+					</td>
+					<td>2018-01-10</td>
+					<td>Hzwl002(杭州武林2号席)</td>
+					<td>杭州武林店</td>
+					<td>收银员</td>
+					<td>-</td>
+					<td>在职</td>
+					<td class="myStore-rate">
+                                                <a data-toggle="modal" data-target="#myModal-rate-detail" href="">详情</a>
+                                                <a href="edite-cashier.html" target="main">编辑</a>
+					</td>
+				</tr>
+                                
+                                <tr>
+					<td class="padding-l-30">
+						<input name="Fruit" type="checkbox" value="" />
+					</td>
+					<td>2018-01-10</td>
+					<td>Hzwl002(杭州武林2号席)</td>
+					<td>杭州武林店</td>
+					<td>收银员</td>
+					<td>-</td>
+					<td>在职</td>
+					<td class="myStore-rate">
+                                                <a data-toggle="modal" data-target="#myModal-rate-detail" href="">详情</a>
+                                                <a href="edite-cashier.html" target="main">编辑</a>
+					</td>
+				</tr>
+                                
+                                <tr>
+					<td class="padding-l-30">
+						<input name="Fruit" type="checkbox" value="" />
+					</td>
+					<td>2018-01-10</td>
+					<td>Hzwl002(杭州武林2号席)</td>
+					<td>杭州武林店</td>
+					<td>收银员</td>
+					<td>-</td>
+					<td>在职</td>
+					<td class="myStore-rate">
+                                                <a data-toggle="modal" data-target="#myModal-rate-detail" href="">详情</a>
+                                                <a href="edite-cashier.html" target="main">编辑</a>
+					</td>
+				</tr>
+                                
+                                <tr>
+					<td class="padding-l-30">
+						<input name="Fruit" type="checkbox" value="" />
+					</td>
+					<td>2018-01-10</td>
+					<td>Hzwl002(杭州武林2号席)</td>
+					<td>杭州武林店</td>
+					<td>收银员</td>
+					<td>-</td>
+					<td>在职</td>
+					<td class="myStore-rate">
+                                                <a data-toggle="modal" data-target="#myModal-rate-detail" href="">详情</a>
+                                                <a href="edite-cashier.html" target="main">编辑</a>
+					</td>
+				</tr>
+                                
+                                <tr>
+					<td class="padding-l-30">
+						<input name="Fruit" type="checkbox" value="" />
+					</td>
+					<td>2018-01-10</td>
+					<td>Hzwl002(杭州武林2号席)</td>
+					<td>杭州武林店</td>
+					<td>收银员</td>
+					<td>-</td>
+					<td>在职</td>
+					<td class="myStore-rate">
+                                                <a data-toggle="modal" data-target="#myModal-rate-detail" href="">详情</a>
+                                                <a href="edite-cashier.html" target="main">编辑</a>
+					</td>
+				</tr>
+                                
+			</tbody>
+		</table>
+                
+                <!-- 详情模态框（Modal） -->
+		<div class="modal fade" id="myModal-rate-detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-detail-tip" aria-hidden="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close font-size-36" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title text-align-c font-16" id="myModalLabel-detail-tip">收银员详情</h4>
+					</div>
+					<div class="modal-body padding-b-0 margin-t-60 margin-b-72">
+						<!--创建时间-->
+					        <div class="row height-32">
+                                                        <div class="col-xs-4">							
+                                                                <span class="float-r vertical-align-m">创建时间</span>					
+                                                        </div>
+                                                        <div class="col-xs-8">							
+                                                                <span class="vertical-align-m">2017-10-26</span>					
+                                                        </div>	
+					        </div>
+                                                
+                                                <!--登录账号-->
+					        <div class="row height-32">
+                                                        <div class="col-xs-4">							
+                                                                <span class="float-r vertical-align-m">登录账号</span>					
+                                                        </div>
+                                                        <div class="col-xs-8">							
+                                                                <span class="vertical-align-m">Hzwl002</span>					
+                                                        </div>	
+					        </div>
+                                                
+                                                <!--姓名-->
+					        <div class="row height-32">
+                                                        <div class="col-xs-4">							
+                                                                <span class="float-r vertical-align-m">姓名</span>					
+                                                        </div>
+                                                        <div class="col-xs-8">							
+                                                                <span class="vertical-align-m">杭州武林2号席</span>					
+                                                        </div>	
+					        </div>
+                                                
+                                                <!--手机-->
+					        <div class="row height-32">
+                                                        <div class="col-xs-4">							
+                                                                <span class="float-r vertical-align-m">手机</span>					
+                                                        </div>
+                                                        <div class="col-xs-8">							
+                                                                <div class="vertical-align-m"></div>										
+                                                        </div>	
+					        </div>
+                                                
+                                                <!--所在门店-->
+					        <div class="row height-32">
+                                                        <div class="col-xs-4">							
+                                                                <span class="float-r vertical-align-m">所在门店</span>					
+                                                        </div>
+                                                        <div class="col-xs-8">							
+                                                                <span class="vertical-align-m">杭州武林店</span>					
+                                                        </div>	
+					        </div>
+                                                
+                                                <!--权限-->
+					        <div class="row height-32">
+                                                        <div class="col-xs-4">							
+                                                                <span class="float-r vertical-align-m">权限</span>					
+                                                        </div>
+                                                        <div class="col-xs-8">							
+                                                                <span class="vertical-align-m">收银员</span>					
+                                                        </div>	
+					        </div>
+                                                
+                                                <!--状态-->
+					        <div class="row height-32">
+                                                        <div class="col-xs-4">							
+                                                                <span class="float-r vertical-align-m">状态</span>					
+                                                        </div>
+                                                        <div class="col-xs-8">							
+                                                                <span class="vertical-align-m">在职</span>					
+                                                        </div>	
+					        </div>
+                                                
+                                                 <!--系统ID-->
+					        <div class="row height-32">
+                                                        <div class="col-xs-4">							
+                                                                <span class="float-r vertical-align-m">系统ID</span>					
+                                                        </div>
+                                                        <div class="col-xs-8">							
+                                                                <span class="vertical-align-m">ad35e6af87e8e1a5d1d9d05063cebad3</span>					
+                                                        </div>	
+					        </div>
+                                                
+                                                 <!--备注-->
+					        <div class="row height-32">
+                                                        <div class="col-xs-4">							
+                                                                <span class="float-r vertical-align-m">备注</span>					
+                                                        </div>
+                                                        <div class="col-xs-8">							
+                                                                <span class="vertical-align-m"></span>					
+                                                        </div>	
+					        </div>
+                                                
+					</div>        
+				</div>
+			</div>
+		</div>
+                
+	</div>
+	
+</body>
+</html>

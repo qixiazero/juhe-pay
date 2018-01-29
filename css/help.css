@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{width:100%;}
+.content{width:1000px;background:#fff; margin:auto;}
+.top-text{ 
+width:100%;
+
+
+padding-left:30px;
+border-bottom:1px solid #eee;
+}
+.top-text{font-size:18px;
+color:#333;
+line-height:80px;
+height:80px;
+  margin-bottom: 30px;
+}
+.row>.col-xs-1{text-align:left; font-size:14px;}
+.row>.col-xs-5{text-align:right; font-size:14px;}
+.row>select{width:200px !important;}
+.row button{ padding:1px 12px !important;}
+.row>.col-xs-12{margin-top:30px !important;}
+.row>.col-xs-4{text-align:center;}
+
+td{text-align:center;}
+
+
+
+
+
+

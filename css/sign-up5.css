@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{width:100%;}
+.content{width:1000px;background:#fff; margin:auto;}
+.top-text{ 
+width:100%;
+
+margin:auto;
+padding-left:30px;
+border-bottom:1px solid #eee;
+}
+
+
+
+
+.top-text{font-size:18px;
+color:#333;
+line-height:80px;
+height:80px;
+  margin-bottom: 30px;
+}
+.top-title{margin-left:30px;
+font-size:14px;
+color:#888;
+border-left:4px solid #36F;
+padding-left:10px;
+margin-top:10px;
+margin-bottom:10px;
+}
+.second-title{font-size:14px;color:#333;margin-left:50px;line-height:2;
+}
+.second-content{font-size:14px;color:#888;line-height:2;margin:auto 20px;}
+.user-number{margin-left:50px;}
+.second-content1{font-size:14px;color:#888;line-height:2;margin-right:20px;
+margin-left:-10px;}
+.first-main li{margin-left:-10px;}
+.second-main li{margin-left:5px;}
+.edit{font-size:14px;color:#888;line-height:2; color:#1188f6;}
+.user-n{margin-left:67px;}
+second-photo{hieght:170px;}
+
+
+
+.edit-name>.modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+	text-align: center;
+	color: #333;
+}
+.user-name{margin-top:30px;}
+.user-name label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 0;
+	color: #333;
+}
+.user-name span {
+	color: #333;
+	margin-right: 5px;
+}
+.user-name input {
+	font-family: inherit;
+	font-size: 12px;
+	line-height:30px;
+	width: 100px;
+	margin-right: 10px;
+	height:30px;
+	
+}
+
+.name label{width:100px;
+text-align:right;}
+
+.title3 input{ font-family: inherit;
+	font-size: 12px;
+	line-height:30px;
+	width: 213px;
+	margin-right: 10px;
+	height:30px;}
+	#btn-psw{background-color:#fff;
+	  border: 1px solid;}
+#btn-psw1{background-color:#fff;
+	  border: 1px solid;}
+	  #btn-psw2{background-color:#fff;
+	  border: 1px solid;}
+ #btn-psw3{background-color:#fff;
+	  border: 1px solid;}
+
+
+
+	
+.middle>.modal-body {
+	margin-bottom: 30px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.foot>.modal-footer {
+	border-top: 1px solid #fff;
+	margin: auto;
+	text-align: center;
+}
+.foot>.modal-footer>button {
+	width: 100px;
+	background: #1188f6;
+	border: 1px solid #1188f6;
+}
+.foot>.madal-footer>.cancel>button {
+	background: #fff;
+	border: 1px solid #666;
+}
+.forget-psw {
+	font-size: 16px;
+	color: #1188f6;
+}
+.user-name>a {
+	color: #1188f6;
+	text-decoration: none;
+}
+.user-name>a:hover, .user-name>a:focus {
+	color: #1188f6;
+	text-decoration: none;
+}
+.sec{color:#fff;background:#1188f6;
+border-radious:50px!important;
+
+  padding: 0px 4px !important;
+  margin-left:50px; 
+  margin-left: 150px;
+  }
+  .sec1{font-size:14px;}
+  .sec2{color:#888;font-size:14px;
+  margin-left:170px;}
+
+/*以上是模态框的修饰*/
+
+ .btn1 a{color:#fff !important;}
+ .btn1:hover a{text-decoration:none;}
+ .btn2 a{color:#333 !important;}
+ .btn2:hover a{text-decoration:none;}
+ td{vertical-align:top;}

@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="../css/Subaccount.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+        $(function () {
+                $('#myTab a:first').tab('show')
+                $('#addmyTab').hide();
+        })
+        function closeDiv(){
+                $('#addmyTab').hide();
+        }
+        function showDiv(){
+                $('#addmyTab').show();
+        }
+</script>
+</head>
+
+<body class="account container">
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="account-title">子账号管理</div>
+		</div>
+		<div class="col-xs-6 account-title-btn" id="addmyTab">
+			<a class="btn-important btn btn-primary float-r" href="#add-SubAccount" data-toggle="modal">
+				<img class="vertical-align-m account-btn-img" src="../img/add.png" alt="">
+				新增子账号
+			</a>
+		</div>
+	</div>
+	<ul id="myTab" class="nav nav-tabs account-nav-ul margin-l-030 row">
+		<li class="active margin-l-30">
+			<a class="account-nav-li-a" href="#home" data-toggle="tab" onClick="closeDiv()">
+				角色列表
+			</a>
+		</li>
+    	<li class="account-nav-li"><a href="#ios" data-toggle="tab" onClick="showDiv()">子账号列表</a></li>
+	</ul>
+	<div id="myTabContent" class="row account-table tab-content">
+		<!--角色列表-->
+		<table class="tab-pane fade in active table table-striped account-table-title" id="home">
+			<thead class="account-table-th">
+				<tr>
+					<th class="account-table-th1 padding-l-30">角色名称</th>
+					<th class="account-table-th2">角色类型</th>
+					<th class="account-table-th2">角色描述</th>
+					<th class="account-table-th2">子账号数量</th>
+					<th class="account-table-th3">操作</th>
+				</tr>
+			</thead>
+			<tbody class="account-table-tb">
+				<tr>
+					<td class="padding-l-30">区域经理</td>
+					<td>系统内置</td>
+					<td>可以分配关联门店并查询相应的业务情况</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td class="padding-l-30">管理员</td>
+					<td>系统内置</td>
+					<td>功能暂时和主账号一样，后期可编辑</td>
+					<td>2</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td class="padding-l-30">财务</td>
+					<td>系统内置</td>
+					<td>财务，可以查看报表和明细</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--子账号列表-->
+		<table class="tab-pane fade table table-striped account-table-title" id="ios">
+			<thead class="account-table-th">
+				<tr>
+					<th class="account-table-th11 padding-l-30">创建时间</th>
+					<th class="account-table-th22">所属角色</th>
+					<th class="account-table-th22">姓名</th>
+					<th class="account-table-th33">登录账号</th>
+					<th class="account-table-th11">手机号</th>
+					<th class="account-table-th22">状态</th>
+					<th class="account-table-th33">操作</th>
+				</tr>
+			</thead>
+			<tbody class="account-table-tb">
+				<tr>
+					<td class="padding-l-30">2017-12-28</td>
+					<td>财务</td>
+					<td>财务1</td>
+					<td>H39305510000001@4</td>
+					<td>18055159537</td>
+					<td>在职</td>
+					<td>
+						<a class="account-table-operate" data-toggle="modal" href="#myModal-edit">编辑</a>
+						<a class="account-table-operate padding-left-15" data-toggle="modal" href="#myModal-del" >删除</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="padding-l-30">2017-12-28</td>
+					<td>财务</td>
+					<td>财务1</td>
+					<td>H39305510000001@4</td>
+					<td>18055159537</td>
+					<td>在职</td>
+					<td>
+						<a class="account-table-operate" data-toggle="modal" href="#myModal-edit" >编辑</a>
+						<a class="account-table-operate padding-left-15" data-toggle="modal" href="#myModal-del" >删除</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="padding-l-30">2017-12-28</td>
+					<td>财务</td>
+					<td>财务1</td>
+					<td>H39305510000001@4</td>
+					<td>18055159537</td>
+					<td>在职</td>
+					<td>
+						<a class="account-table-operate" data-toggle="modal" href="#myModal-edit" >编辑</a>
+						<a class="account-table-operate padding-left-15" data-toggle="modal" href="#myModal-del" >删除</a>
+						<a class="account-table-operate padding-left-15" data-toggle="modal" href="#myModal-con" >关联门店</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="padding-l-30">2017-12-28</td>
+					<td>财务</td>
+					<td>财务1</td>
+					<td>H39305510000001@4</td>
+					<td>18055159537</td>
+					<td>在职</td>
+					<td>
+						<a class="account-table-operate" data-toggle="modal" href="#myModal-edit" >编辑</a>
+						<a class="account-table-operate padding-left-15" data-toggle="modal" href="#myModal-del" >删除</a>
+						<a class="account-table-operate padding-left-15" data-toggle="modal" href="#myModal-con" >关联门店</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<!-- 新增子账号模态框（Modal） -->
+	<div class="modal fade" id="add-SubAccount" tabindex="-1" role="dialog" aria-labelledby="add-subAccount" aria-hidden="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close font-size-36" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title text-align-c font-16" id="add-subAccount">新增子账号</h4>
+				</div>
+				<div class="modal-body">
+					<!--选择角色-->
+					<div class="row">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">选择角色</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<select class="account-select" name="roleId">
+								<option value="41">管理员</option>
+								<option value="42">区域经理</option>
+								<option value="43">财务</option>
+                            </select>
+						</div>
+						<div class="col-xs-1"></div>											
+					</div>
+					<!--登录账号-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">登录账号</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<div class="row">
+								<div class="col-xs-5 height-34">
+									<span>H39305510000001@</span>
+								</div>
+								<div class="col-xs-7">
+									<input type="text" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="account-model-tip">限16位以内数字、字母</div>
+							<div class="col-xs-1"></div>
+						</div>												
+					</div>
+					<!--手机号码-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">手机号</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<input type="text" class="form-control" placeholder="">
+							<div class="account-model-tip">用于接收各类验证码及作为平台登录名使用</div>
+							<div class="col-xs-1"></div>
+						</div>												
+					</div>
+					<!--姓名-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">姓名</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<input type="text" class="form-control" placeholder="">	
+						</div>
+						<div class="col-xs-1"></div>											
+					</div>
+					<!--登录密码-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">登录密码</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<input type="password" class="form-control" placeholder="">
+							<div class="account-model-tip">6-20位字符（区分大小写）</div>
+							<div class="col-xs-1"></div>
+						</div>												
+					</div>
+					<!--操作密码-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">操作密码</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<input type="password" class="form-control" placeholder="">
+							<div class="account-model-tip">6位纯数字</div>
+							<div class="col-xs-1"></div>
+						</div>												
+					</div>
+					<!--账号状态-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">账号状态</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<label class="height-34 work">
+								<input type="radio" name="optionsRadios" id="optionsRadios1" value="" checked>
+								在职
+								<input class="margin-l-120" type="radio" name="optionsRadios" id="optionsRadios2" value="" checked>
+								离职
+							</label>
+						</div>												
+					</div>
+					<!--提交按钮-->
+					<div class="btn-container row account-submit margin-t-b">
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-primary float-r">确定</button>
+						</div>
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-default float-l" data-dismiss="modal">取消</button>
+						</div>						
+					</div>										
+				</div>
+		
+			</div>
+		</div>
+	</div>
+	
+	<!-- 编辑模态框（Modal） -->
+	<div class="modal fade" id="myModal-edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close font-size-36" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title text-align-c font-16" id="myModalLabel">编辑子账号</h4>
+				</div>
+				<div class="modal-body">
+					<!--选择角色-->
+					<div class="row">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">选择角色</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<select class="account-select" name="roleId">
+								<option value="41">管理员</option>
+								<option value="42">区域经理</option>
+								<option value="43">财务</option>
+                            </select>
+						</div>
+						<div class="col-xs-1"></div>											
+					</div>
+					<!--登录账号-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">登录账号</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<div class="row">
+								<div class="col-xs-5 height-34">
+									<span>H39305510000001@</span>
+								</div>
+								<div class="col-xs-7">
+									<input type="text" class="form-control" placeholder="twitterhandle">
+								</div>
+							</div>
+							<div class="account-model-tip">限16位以内数字、字母</div>
+							<div class="col-xs-1"></div>
+						</div>												
+					</div>
+					<!--手机号码-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">手机号</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<input type="text" class="form-control" placeholder="18055159537">
+							<div class="account-model-tip">用于接收各类验证码及作为平台登录名使用</div>
+							<div class="col-xs-1"></div>
+						</div>												
+					</div>
+					<!--姓名-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">姓名</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<input type="text" class="form-control" placeholder="财务1">	
+						</div>
+						<div class="col-xs-1"></div>											
+					</div>
+					<!--登录密码-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">登录密码</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<input type="password" class="form-control" placeholder="******">
+							<div class="account-model-tip">6-20位字符（区分大小写）</div>
+							<div class="col-xs-1"></div>
+						</div>												
+					</div>
+					<!--操作密码-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">操作密码</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+							<input type="password" class="form-control" placeholder="******">
+							<div class="account-model-tip">6位纯数字</div>
+							<div class="col-xs-1"></div>
+						</div>												
+					</div>
+					<!--账号状态-->
+					<div class="row margin-t-20">
+						<div class="col-xs-3 height-34">
+							<span class="float-r">账号状态</span>
+							<span class="float-r account-star-red">*</span>							
+						</div>
+						<div class="col-xs-8">
+                        <label for="m"><input type="radio" name="sex" value=
+                        "m" id="m" checked><span>在职</span></label>
+                        
+                        <label for="wm"><input type="radio" name="sex" value="w" id="wm">
+                        <span>
+                        离职
+                        </span>
+                        </label>
+							<!--<label class="height-34 work">
+								<input type="radio" name="optionsRadios1" id="optionsRadios1" value="" checked>
+								在职</label>
+								<input class="margin-l-120" type="radio" name="optionsRadios2" id="optionsRadios2" value="">
+								离职
+							</label>-->
+						</div>												
+					</div>
+					<!--提交按钮-->
+					<div class="btn-container row account-submit margin-t-b">
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-primary float-r">确定</button>
+						</div>
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-default float-l" data-dismiss="modal">取消</button>
+						</div>						
+					</div>										
+				</div>
+		
+			</div>
+		</div>
+	</div>
+	
+	<!-- 删除模态框（Modal） -->
+	<div class="modal fade" id="myModal-del" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-tip" aria-hidden="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close font-size-36" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title text-align-c font-16" id="myModalLabel-tip">提示</h4>
+				</div>
+				<div class="modal-body">
+					<!--提示语-->
+					<div class="row">
+						<div class="col-xs-12 height-100">						
+							<img class="account-waining" src="../img/warning-yellow.png" alt="">	
+							<span class="margin-l-10">亲，确定要删除该子账号吗？</span>						
+						</div>																	
+					</div>					
+					<!--提交按钮-->
+					<div class="btn-container row account-submit margin-t-b">
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-primary float-r">确定删除</button>
+						</div>
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-default float-l" data-dismiss="modal">取消</button>
+						</div>						
+					</div>										
+				</div>
+		
+			</div>
+		</div>
+	</div>
+	<!--关联门店模态框-->
+    
+    
+    
+</body>
+</html>

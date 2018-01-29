@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>签约管理</title>
+<link rel="stylesheet" type="text/css" href="../css/contract-management.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="signInfo container">
+	<div class="row signInfo-title-div">
+		<div class="col-xs-12">
+			<div class="signInfo-title">签约管理</div>
+		</div>
+	</div>
+	<!--列表-->
+		<table class="tab-pane fade in active table signInfo-table-title">
+			<thead class="signInfo-table-th">
+				<tr>
+					<th class="border-r-1 vertical-align-m signInfo-thead-th1">签约通道</th>
+					<th class="border-r-1 vertical-align-m signInfo-thead-th1">签约产品</th>
+					<th class="border-r-1 vertical-align-m signInfo-thead-th2">签约状态</th>
+					<th class="border-r-1 vertical-align-m signInfo-thead-th1">启用状态</th>
+					<th class="border-r-1 vertical-align-m signInfo-thead-th3">收款参数</th>
+					<th class="border-r-1 vertical-align-m signInfo-thead-th4">签约费率</th>
+					<th class="vertical-align-m">去操作</th>
+				</tr>
+			</thead>
+			<tbody class="">
+				<!--官方通道-->
+				<tr>
+					<td class="vertical-align-m border-r-1" rowspan="3">官方通道</td>
+					<td class="vertical-align-m border-r-1">支付宝</td>
+					<td class="vertical-align-m border-r-1">
+					<img class="margin-r-5" src="../img/sign-none.png" alt="">
+					未签约</td>
+					<td class="vertical-align-m border-r-1">--</td>
+					<td class="vertical-align-m border-r-1">--</td>
+					<td class="vertical-align-m border-r-1 signInfoList-rate">--</td>
+					<td class="vertical-align-m signInfoList-rate">
+                    <a data-toggle="modal" data-target="#myModal-rate1" href="" target="_blank">去签约</a></td>
+				</tr>
+				<tr>
+					<td class="vertical-align-m border-r-1">微信支付</td>
+					<td class="vertical-align-m border-r-1">
+						<img class="margin-r-5" src="../img/sign-none.png" alt="">
+						未签约</td>
+					<td class="vertical-align-m border-r-1">--</td>
+					<td class="vertical-align-m border-r-1">--</td>
+					<td class="vertical-align-m border-r-1 signInfoList-rate">--</td>
+					<td class="vertical-align-m signInfoList-rate"><a href="sign-up.html" target="_blank">去签约</a>
+                    <a data-toggle="modal" data-target="#myModal-rate2" class="margin-l-10" 
+                    href="">收款参数设置</a></td>
+				</tr>
+				<tr>
+					<td class="vertical-align-m border-r-1">翼支付</td>
+					<td class="vertical-align-m border-r-1">
+					<div><img class="margin-r-5" src="../img/sign-success.png" alt="">成功签约</div>
+					<div>2017-12-20</div></td>
+					<td class="vertical-align-m border-r-1">已启用</td>
+					<td class="vertical-align-m border-r-1"><p>交易KEY: 375513</p>
+					    <p>数据KEY: EB5AA256E3652DB57326A3BFA47B9B5C5C91A83B79B4F196</p>
+				    <p>商户代码: 02340113190592861</p></td>
+					<td class="vertical-align-m border-r-1 signInfoList-rate">0.3% <a data-toggle="modal" data-target="#myModal-rate" href="#">备注费率</a></td>
+					<td class="vertical-align-m signInfoList-rate">
+                    <a data-toggle="modal" data-target="#myModal-rate3" href="">收款参数设置</a></td>
+				</tr>
+				<!--平安银行-->
+				<tr>
+					<td class="vertical-align-m border-r-1" rowspan="3">平安银行</td>
+					<td class="vertical-align-m border-r-1">支付宝</td>
+					<td class="vertical-align-m border-r-1">
+					<div><img class="margin-r-5" src="../img/sign-success.png" alt="">成功签约</div>
+					<div>2017-12-20</div></td>
+					<td class="vertical-align-m border-r-1">未启用</td>
+					<td rowspan="3" class="vertical-align-m border-r-1">
+                    	<p>开户名称: 刘伟明</p>
+					    <p>开户银行: 中国工商银行五里墩分理处</p>
+					    <p>银行账号: 6222021302000170448</p>
+				    	<p>银行商户号: CB20170719090926298</p>				    
+                        <p>&nbsp;</p>
+                        </td>
+					<td rowspan="3" class="vertical-align-m border-r-1 signInfoList-rate">0.4%					
+                    </td>
+					<td class="vertical-align-m signInfoList-rate"><a href="see-data.html" target="_blank">查看资料</a>
+                    <a data-toggle="modal" data-target="#myModal-rate4" class="margin-l-10" href="">启用</a> 
+                    <a class="margin-l-10" href="upgrade.html" target="_blank">升级成企业</a></td>
+				</tr>
+				<tr>
+					<td class="vertical-align-m border-r-1">微信支付</td>
+					<td class="vertical-align-m border-r-1">
+					<div><img class="margin-r-5" src="../img/sign-success.png" alt="">成功签约</div>
+					<div>2017-12-20</div></td>
+					<td class="vertical-align-m border-r-1">已启用</td>
+					<td class="vertical-align-m signInfoList-rate"><a href="see-data.html" target="_blank">查看资料</a>
+                    <a data-toggle="modal" data-target="#myModal-rate5" class="margin-l-10" href="">启用</a>
+                    <a class="margin-l-10" href="upgrade.html" target="_blank">升级成企业</a></td>
+				</tr>
+                <tr>
+					<td class="vertical-align-m border-r-1">云闪付</td>
+					<td class="vertical-align-m border-r-1">
+					<div><img class="margin-r-5" src="../img/sign-success.png" alt="">成功签约</div>
+					<div>2017-12-20</div></td>
+					<td class="vertical-align-m border-r-1">未启用</td>
+					<td class="vertical-align-m signInfoList-rate"><a href="see-data.html" target="_blank">查看资料</a>
+                    <a class="margin-l-10" href="upgrade.html" target="_blank">升级成企业</a></td>
+				</tr>
+				<!--网商银行-->
+				<tr>
+					<td class="vertical-align-m border-r-1" rowspan="2">网商银行</td>
+					<td class="vertical-align-m border-r-1">支付宝</td>
+					<td class="vertical-align-m border-r-1">
+					<div><img class="margin-r-5" src="../img/sign-success.png" alt="">成功签约</div>
+					<div>2017-12-20</div></td>
+					<td class="vertical-align-m border-r-1">未启用</td>
+					<td class="vertical-align-m border-r-1 signInfo-thead-th3"  rowspan="2" title="EB5AA256E3652DB57326A3BFA47B9B5C5C91A83B7256E3652DB57326A3BFA47B9B5C5C91A83B7" ><p>开户名称: 刘伟明</p>
+					    <p>开户银行: 中国工商银行合肥市五里墩分理处</p>
+					    <p>银行账号: 6222021302000170448</p>
+					    <p>银行商户号: MY0000120180102150452</p>
+					    <p>网商商户号: 226801000001325365626</p>
+				    <p>微信子商户: 86876613</p></td>
+					<td rowspan="2" class="vertical-align-m border-r-1 signInfoList-rate">0.4%</td>
+					<td class="vertical-align-m signInfoList-rate"><a href="see-data.html" target="_blank">查看资料</a></td>
+				</tr>
+				<tr>
+					<td class="vertical-align-m border-r-1">微信支付</td>
+					<td class="vertical-align-m border-r-1">
+					<div><img class="margin-r-5" src="../img/sign-success.png" alt="">成功签约</div>
+					<div>2017-12-20</div></td>
+					<td class="vertical-align-m border-r-1">已启用</td>
+					<td class="vertical-align-m signInfoList-rate"><a href="see-data.html" target="_blank">查看资料</a></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<!-- 编辑模态框（Modal） -->
+		<div class="modal fade" id="myModal-rate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-tip-y" aria-hidden="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close font-size-36" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title text-align-c font-16" id="myModalLabel-tip-y">翼支付官方通道费率备注</h4>
+					</div>
+					<!--备注费率-->
+					<div class="modal-body padding-b-0">
+						<div class="row margin-t-20">
+							<div class="col-xs-4 height-34">
+								<span class="float-r">备注费率</span>
+								<span class="float-r signInfoList-star-red">*</span>							
+							</div>
+							<div class="col-xs-5">
+								<input type="text" class="form-control" placeholder="">
+							</div>	
+							<div class="col-xs-3 height-34 margin-l-025">%</div>									
+						</div>
+					</div>
+					<!--操作密码-->
+					<div class="modal-body padding-t-0">					
+						<div class="row margin-t-20">
+							<div class="col-xs-4 height-34">
+								<span class="float-r">操作密码</span>
+								<span class="float-r signInfoList-star-red">*</span>							
+							</div>
+							<div class="col-xs-5">
+								<input type="text" class="form-control" placeholder="请输入操作密码">
+							</div>	
+							<a class="col-xs-3 height-34" href="security-setting.html">忘记密码</a>											
+						</div>																					
+					</div>
+					
+					<!--提交按钮-->
+					<div class="btn-container row account-submit margin-t-b">
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-primary float-r">确定删除</button>
+						</div>
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-default float-l" data-dismiss="modal">取消</button>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        
+        <!-- 官方通道支付宝去签约模态框（Modal） -->
+		<div class="modal fade" id="myModal-rate1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-tip-z" aria-hidden="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close font-size-36" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title text-align-c font-16" id="myModalLabel-tip-z">支付宝收款参数设置</h4>
+					</div>
+					<!--去签约-->
+					<div class="modal-body padding-b-0">
+						<div class="row margin-t-20">
+							<div class="col-xs-4 height-34">
+								<span class="float-r">支付宝账户</span>
+								<span class="float-r signInfoList-star-red">*</span>
+                                						
+							</div>
+							<div class="col-xs-5">
+								<input type="text" class="form-control" placeholder="请输入支付宝账号">
+							</div>	
+							<!--<div class="col-xs-3 height-34 margin-l-025">%</div>-->									
+						</div>
+                                                <span class="reminder">用于收款的支付宝帐号，帐号为手机号或者邮箱</span>	
+					</div>
+					
+					
+					<!--提交按钮-->
+					<div class="btn-container row account-submit margin-t-b">
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-primary float-r">确定删除</button>
+						</div>
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-default float-l" data-dismiss="modal">取消</button>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!--官方通道-微信支付-收款参数设置模态框（Modal）-->
+        
+		<div class="modal fade" id="myModal-rate2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-tip-w" aria-hidden="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close font-size-36" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title text-align-c font-16" id="myModalLabel-tip-w">微信支付收款参数设置</h4>
+					</div>
+					<!--去签约-->
+					<div class="modal-body padding-b-0">
+						<div class="row margin-t-20">
+							<div class="col-xs-4 height-34">
+								<span class="float-r">微信支付商户号</span>
+								<span class="float-r signInfoList-star-red">*</span>
+                                						
+							</div>
+							<div class="col-xs-5">
+								<input type="text" class="form-control" placeholder="请输入微信支付户号">
+							</div>	
+							<!--<div class="col-xs-3 height-34 margin-l-025">%</div>-->									
+						</div>
+                       	
+					</div>
+					
+					
+					<!--提交按钮-->
+					<div class="btn-container row account-submit margin-t-b">
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-primary float-r">确定删除</button>
+						</div>
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-default float-l" data-dismiss="modal">取消</button>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+        
+         
+        <!--官方通道-翼支付-收款参数设置模态框（Modal）-->
+        
+		<div class="modal fade" id="myModal-rate3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-data-y" aria-hidden="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close font-size-36" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title text-align-c font-16" id="myModalLabel-data-y">翼支付收款参数设置</h4>
+					</div>
+					<!--交易KEY-->
+					<div class="modal-body padding-b-0">
+						<div class="row margin-t-20">
+							<div class="col-xs-4 height-34">
+								<span class="float-r">交易KEY</span>
+                                
+								<span class="float-r signInfoList-star-red">*</span>
+                                						
+							</div>
+							<div class="col-xs-5">
+								<input type="text" class="form-control" placeholder="请输入交易KEY">
+							</div>									
+						</div>
+					</div>
+					
+                    <!--数据KEY-->
+                    <div class="modal-body padding-b-0">
+						<div class="row margin-t-20">
+							<div class="col-xs-4 height-34">
+								<span class="float-r">数据KEY</span>
+                                
+								<span class="float-r signInfoList-star-red">*</span>
+                                						
+							</div>
+							<div class="col-xs-5">
+								<input type="text" class="form-control" placeholder="请输入数据KEY">
+							</div>									
+						</div>
+					</div>
+                    
+                    <!--商户代码-->
+                    <div class="modal-body padding-b-0">
+						<div class="row margin-t-20">
+							<div class="col-xs-4 height-34">
+								<span class="float-r">商户代码</span>
+                                
+								<span class="float-r signInfoList-star-red">*</span>
+                                						
+							</div>
+							<div class="col-xs-5">
+								<input type="text" class="form-control" placeholder="请输入商户代码">
+							</div>									
+						</div>
+					</div>
+                    
+                    <!--操作密码-->
+					<div class="modal-body padding-t-0">					
+						<div class="row margin-t-20">
+							<div class="col-xs-4 height-34">
+								<span class="float-r">操作密码</span>
+								<span class="float-r signInfoList-star-red">*</span>							
+							</div>
+							<div class="col-xs-5">
+								<input type="text" class="form-control" placeholder="请输入操作密码">
+							</div>	
+							<a class="col-xs-3 height-34" href="security-setting.html">忘记密码</a>											
+						</div>																					
+					</div>
+					
+					
+					<!--提交按钮-->
+					<div class="btn-container row account-submit margin-t-b">
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-primary float-r">确定删除</button>
+						</div>
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-default float-l" data-dismiss="modal">取消</button>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        
+         <!--平安银行-支付宝-启用模态框（Modal）-->
+        
+		<div class="modal fade" id="myModal-rate4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-data-z" aria-hidden="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close font-size-36" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title text-align-c font-16" id="myModalLabel-data-z">支付宝收款参数设置</h4>
+					</div>
+					<!--提示信息-->
+                    <div class="message">
+                    	
+                        <div class="float-r">
+                        	<p>此通道支付宝启用后，其他通道的支付宝将被停用，</p>
+                        	<p>您确定启用吗？</p>
+                        </div>
+                        <div class="float-r t-icon">
+                    		<img src="../img/warning-yellow.png" width="30" alt="tishi" 
+                            title="tishi">
+                    	</div>
+                     </div>
+					<!--提交按钮-->
+					<div class="btn-container row account-submit margin-t-b">
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-primary float-r">确定删除</button>
+						</div>
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-default float-l" data-dismiss="modal">取消</button>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+        
+         <!--平安银行-微信支付-启用模态框（Modal）-->
+        
+		<div class="modal fade" id="myModal-rate5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-data-w" aria-hidden="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close font-size-36" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title text-align-c font-16" id="myModalLabel-data-w">微信支付收款参数设置</h4>
+					</div>
+					<!--提示信息-->
+                    <div class="message">
+                    	
+                        <div class="float-r">
+                        	<p>此通道微信支付启用后，其他通道的微信支付将被停用，</p>
+                        	<p class="p1">您确定启用吗？</p>
+                        </div>
+                        <div class="float-r t-icon">
+                    		<img src="../img/warning-yellow.png" width="30" alt="tishi" 
+                            title="tishi">
+                    	</div>
+                     </div>
+					<!--提交按钮-->
+					<div class="btn-container row account-submit margin-t-b">
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-primary float-r">确定删除</button>
+						</div>
+						<div class="col-xs-6">
+							<button type="button" class="btn btn-default float-l" data-dismiss="modal">取消</button>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+        
+</body>
+</html>

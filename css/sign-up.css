@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{width:100%;}
+.content{width:1000px;background:#fff; margin:auto;}
+.top-text{ 
+width:100%;
+
+margin:auto;
+padding-left:30px;
+border-bottom:1px solid #eee;
+}
+
+
+
+
+.top-text{font-size:18px;
+color:#333;
+line-height:80px;
+height:80px;
+  margin-bottom: 30px;
+}
+.sign-up-t{color:#888;}
+.top-title{margin-left:30px;
+font-size:14px;
+color:#888;
+border-left:4px solid #36F;
+padding-left:10px;
+margin-top:10px;
+margin-bottom:10px;
+}
+/*以上是签约管理>去签约修饰*/
+.list0{margin-left:50px !important;}
+.list0>.col-xs-2{padding:0px; font-size:14px; font-weight:200;color:#888;
+  width: 17.666667%;}
+.list1{
+	background:#1188F6;
+border-radius:50px;
+padding:2px 7px;
+color:#fff;
+margin-right:3px;}
+.list2{border-radius:50px;
+padding:2px 7px;
+border:#888 1px solid;
+color:#888;
+margin-right:3px;
+}
+.line{color:#888;}
+.first1{color:#333;}
+.list-5{margin-left:-30px !important;}
+/*以上是几个步骤修饰*/
+.sign-up-1>.col-xs-11{color:#888;line-height:2;margin-top:20px; font-size:14px;
+}
+.sign-up-1>.col-xs-1{color:#1188f6;font-size:48px;font-weight:bold; text-align:right; margin-top:-19px;  margin-right: -16px;}
+/*以上是小标题修饰*/
+.star{color:#f00 !important;font-size:14px !important;}
+.sign-up-c>.col-xs-2{font-size:14px !important; text-align:right; color:#333;
+margin-top:20px;}
+.sign-up-c>.col-xs-4{margin-top:20px;}
+.sign-up-c label{font-size:14px !important; font-weight:normal;}
+.sign-icon{color:#fff;background:#00a854;}
+.sign-up-c>.col-xs-6{width:0% !important;
+padding-left:5px;
+ padding-right:14px;
+ border-radius:50px;
+ font-size:12px;
+ margin-top:24px;}
+/* 以上是签约类型与产品修饰*/
+#user{width: 360px !important; padding:3px 0px;}
+#user1{width:100px !important;}
+/*以上是输入框的修饰*/
+.sign-picture>.col-xs-6{width:50% !important; color:#1188f6;}
+.sign-btn{margin-top:40px;}
+.btn2{  margin-right: -33px !important;}
+ .btn1 a{color:#fff !important;}
+ .btn1:hover a{text-decoration:none;}
+ .btn2 a{color:#333 !important;}
+ .btn2:hover a{text-decoration:none;}
+ td{vertical-align:top;}

@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{width:100%;}
+.content{width:1000px;background:#fff; margin:auto;}
+.top-text{ 
+width:100%;
+
+
+padding-left:30px;
+border-bottom:1px solid #eee;
+}
+.top-text{font-size:18px;
+color:#333;
+line-height:80px;
+height:80px;
+  margin-bottom: 30px;
+}
+
+
+.col-xs-2{color:#666;text-align:right; margin-top:20px;}
+.col-xs-1{margin-top:20px;}
+.col-xs-10{margin-top:20px;}
+.col-xs-4{margin-top:20px;}
+.col-xs-1>.form-control{
+	box-shadow: 0 0 0;
+  margin-top: -6px;
+  border-radius:0px;
+	}
+	.btn-default{border:hidden !important; margin-top:-5px;
+	 border: 0px;
+        outline: none !important;
+	}
+	
+	.active{background:#e6e6e6;}
+	
+	.table-head td{font-weight:bold;}
+	.table{margin-top:20px; border:1px solid #eee;}
+	
+	.table > tbody > tr > td, .table > tfoot > tr > td {
+  padding: 8px !important;
+  line-height: 2.428571 !important;
+  vertical-align: top !important;
+  border-top: 1px solid #ddd !important;}
+  .col-xs-12{margin-left:30px;}
+
+
+
+
+
+

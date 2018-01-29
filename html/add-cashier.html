@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="../css/cashier.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container">
+        <div class="row myStore-title-div">
+		<div class="col-xs-6 padding-l-r-30">
+			<div>修改收银员</div>
+		</div>
+	</div>
+        
+        <!--登录账号-->
+        <div class="row margin-t-20">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">登录账号：</span>
+                        <span class="float-r store-star-red">*</span>							
+                </div>
+                <div class="col-xs-6 height-34">
+                        <input type="text" class="form-control" value="" placeholder="请输入登录账号">
+                </div>												
+        </div>
+        
+        <!--收银员姓名-->
+        <div class="row margin-t-20">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">收银员姓名：</span>
+                        <span class="float-r store-star-red">*</span>							
+                </div>
+                <div class="col-xs-6">
+                        <input type="text" class="form-control" value="" placeholder="请修改收银员姓名">
+                </div>												
+        </div>
+        
+        <!--联系手机-->
+        <div class="row margin-t-20 store-input">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">联系手机：</span>							
+                </div>
+                <div class="col-xs-6">
+                        <input type="text" class="form-control" placeholder="例：15715708137">
+                </div>		      
+        </div>
+        
+        <!--归属门店-->
+        <div class="row margin-t-20 store-input">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">归属门店：</span>
+                        <span class="float-r store-star-red">*</span>							
+                </div>
+                <div class="col-xs-6">
+                        <input type="text" class="form-control" placeholder="请输入门店名称">
+                </div>		
+        </div>
+        
+        <!--账号状态-->
+        <div class="row margin-t-20">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">账号状态</span>					
+                </div>
+                <div class="col-xs-6">
+                        <label class="height-34 work">
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="" checked>
+                                在职
+                                <input class="margin-l-60" type="radio" name="optionsRadios" id="optionsRadios2" value="">
+                                离职
+                        </label>
+                </div>												
+        </div>
+        
+        <!--权限-->
+        <div class="row margin-t-10">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">权限</span>					
+                </div>
+                <div class="col-xs-6">
+                        <label class="height-34 work">
+                                <input type="radio" name="optionsRadiosq" id="optionsRadios3" value="" checked>
+                                收银员<span>（拥有查询本人收款明细权限）</span>
+                        </label>
+                </div>												
+        </div>
+        <div class="row">
+                <div class="col-xs-2 height-34"></div>
+                <div class="col-xs-6">
+                        <label class="height-34 work">
+                                <input class="" type="radio" name="optionsRadiosq" id="optionsRadios4" value="">
+                                店长<span>（拥有查询本门店所有收银员收款明细与退款权限）</span>
+                        </label>
+                </div>												
+        </div>
+        
+        <!--登录密码-->
+        <div class="row margin-t-20">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">登录密码：</span>
+                        <span class="float-r account-star-red">*</span>							
+                </div>
+                <div class="col-xs-6">
+                        <input type="password" class="form-control" placeholder="请输入登录密码">
+                        <div class="account-model-tip">6-20位字母或数字</div>
+                        <div class="col-xs-1"></div>
+                </div>												
+        </div>
+        
+        <!--确认登录密码-->
+        <div class="row margin-t-20">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">确认登录密码：</span>
+                        <span class="float-r account-star-red">*</span>							
+                </div>
+                <div class="col-xs-6">
+                        <input type="password" class="form-control" placeholder="确认登录密码">
+                </div>												
+        </div>
+        
+         <!--备注-->
+        <div class="row margin-t-20 store-input">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">备注：</span>						
+                </div>
+                <div class="col-xs-5">
+                        <textarea class="form-control width-355" placeholder="请输入备注"></textarea>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5 update-model-tip">限30个字</div>
+        </div>
+        
+        <!--提交按钮-->
+        <div class="btn-container row account-submit margin-t-b">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5 myStore-title">
+                        <button type="button" class="btn btn-primary margin-r-30">保存</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                </div>						
+        </div>
+        
+        
+</body>
+</html>

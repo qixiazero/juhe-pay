@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>交易分析</title>
+<link rel="stylesheet" type="text/css" href="../css/transaction.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">  
+                $(document).ready(function() {  
+                                      
+                      
+                    $("select").customComboBox({  
+  
+                        tipText : "Enter Your Value",  
+  
+                        tipClass : "mytipclass",  
+  
+                        allowed : /[A-Za-z0-9$.s]/,  
+  
+                        notallowed : /[<>]/,  
+  
+                        index : 'last',  
+  
+                        isEditing : function(el, status, value) {  
+                            if (typeof window.console!='object') { return; }  
+                            console.info('Editing status changed to (', status, ') on ', el, ' combo box and the selected value is "', value, '"');  
+                        },  
+                        onKeyDown : function(el, character, fulltext) {  
+                            if (typeof window.console!='object') { return; }  
+                            console.info('The character (', character, ') was just typed into ', el, ' combo box and the complete text is now "', fulltext, '"');  
+                        },  
+                        onDelete : function(el, fulltext) {  
+                            if (typeof window.console!='object') { return; }  
+                            console.info('A character was deleted from ', el, ' combo box and the complete text is now "', fulltext, '"');  
+                        }  
+                    });  
+                      
+                    $("form p").find('input').on('click',function(e) {  
+                         var sel = $(e.currentTarget).prev('select');  
+                         var name = sel.attr('name').toUpperCase();  
+                         var val = sel.find('option:selected').val();  
+                         $("#result").text(name+" combo box value is " + val);  
+                    });  
+                      
+  
+                }); 
+				</script> 
+ <script>
+    $(function () {
+        $('#myTab a:first').tab('show')
+    })
+</script>
+  
+ 
+</head>
+
+<body>
+<div class="wrap">
+    <div class="content">
+    
+    <!--以下是标题-->
+        <div class="top-text">
+        	<span>交易分析</span>
+        </div>
+      <!--  以下是内容-标题-->
+
+      <div class="row clear t-tab">
+      	<div class="col-xs-12">
+        	<span>经营数据</span>
+            <div class="list">
+            	<ul id="myTab" class="nav nav-tabs">
+					<li class="active">
+						<a href="#day" data-toggle="tab">日</a>
+					</li>
+					<li><a href="#week" data-toggle="tab">周</a></li>
+					<li><a href="#month" data-toggle="tab">月</a></li>
+				</ul>
+            </div> 
+        </div>
+      </div>
+ <!--    以下是日内容 -->
+    <div id="myTabContent" class="tab-content">
+	
+      	 <!--以下是日上半部分内容   -->
+ 		 <div class="tab-pane fade in active" id="day">
+            <div class="row list1">
+      				<div class="col-xs-1"></div>
+        			<div class="col-xs-6">
+					<form>  
+                 
+               		<select name='Plugins' style="width:200px; height:30px;">  
+                   <option value="">昨天</option>  
+                   <option value="">01/15</option>  
+                   <option value="">01/14</option>
+                   <option value="">01/13</option>  
+                   <option value="">01/12</option>  
+              		 </select>  
+               			 
+           		   </form>  
+        		   </div>
+             </div>
+             <!--以下是数据-->
+             <div class="row math">
+             	<div class="col-xs-2">
+                	<span>0.16元</span>
+                    <div class="math-m">收款6笔</div>
+                </div>
+                <div class="col-xs-2">
+                	<span>-0.00</span>
+                    <div class="math-m">退款0笔</div>
+                </div>
+                <div class="col-xs-2">
+                	<span>0.00元</span>
+                    <div class="math-m">平台优惠0笔</div>
+                </div>
+                <div class="col-xs-2">
+                	<span>0.00元</span>
+                    <div class="math-m">商家优惠0笔</div>
+                </div>
+                <div class="col-xs-2" style="border-right:hidden;">
+                	<span>0.01元</span>
+                    <div class="math-m">客单价</div>
+                </div>
+             </div>
+      
+      	   <!--以下是日下半部分内容-->
+           <ul id="myTab" class="nav nav-tabs">
+				<li class="active list-l">
+					<a href="#money" data-toggle="tab">金额</a>
+				</li>
+				<li><a href="#number" data-toggle="tab">笔数</a></li>
+			</ul>
+      
+      		
+            <div id="myTabContent1" class="tab-content">
+				<div class="tab-pane fade in active" id="money">
+					<img src="../img/4.jpg" width="836" height="300">
+				</div>
+				<div class="tab-pane fade" id="number">
+					<img src="../img/5.jpg" width="836" height="300">
+				</div>
+	
+			</div>
+      
+    	</div>
+        <!--以下是周上半部分内容   -->
+  		 <div class="tab-pane fade in " id="week">
+            <div class="row list1">
+      				<div class="col-xs-1"></div>
+        			<div class="col-xs-6">
+					<form>  
+                 
+               		<select name='Plugins' style="width:200px; height:30px;">  
+                   <option value="">本周</option>  
+                   <option value="">上周</option>  
+                   <option value="">01/01~01/07</option>
+                   <option value="">12/25~12/31</option>  
+                   <option value="">12/18~12/24</option>  
+              		 </select>  
+               			 
+           		   </form>  
+        		   </div>
+             </div>
+             <!--以下是数据-->
+             <div class="row math">
+             	<div class="col-xs-2">
+                	<span>0.56元</span>
+                    <div class="math-m">收款6笔</div>
+                </div>
+                <div class="col-xs-2">
+                	<span>-0.01</span>
+                    <div class="math-m">退款2笔</div>
+                </div>
+                <div class="col-xs-2">
+                	<span>0.00元</span>
+                    <div class="math-m">平台优惠0笔</div>
+                </div>
+                <div class="col-xs-2">
+                	<span>0.00元</span>
+                    <div class="math-m">商家优惠0笔</div>
+                </div>
+                <div class="col-xs-2" style="border-right:hidden;">
+                	<span>0.01元</span>
+                    <div class="math-m">客单价</div>
+                </div>
+             </div>
+             
+             <!--以下是周下半部分内容-->
+             <ul id="myTab" class="nav nav-tabs">
+				<li class="active">
+					<a href="#money1" data-toggle="tab">金额</a>
+				</li>
+				<li><a href="#number1" data-toggle="tab">笔数</a></li>
+			</ul>
+      
+      		
+            <div id="myTabContent1" class="tab-content">
+				<div class="tab-pane fade in active" id="money1">
+					<img src="../img/4.jpg" width="836" height="300">
+				</div>
+				<div class="tab-pane fade" id="number1">
+					<img src="../img/5.jpg" width="836" height="300">
+				</div>
+	
+			</div>
+             
+    </div>   
+  
+  <!--以下是月上半部分内容   -->
+  		 <div class="tab-pane fade in " id="month">
+            <div class="row list1">
+      				<div class="col-xs-1"></div>
+        			<div class="col-xs-6">
+					<form>  
+                 
+               		<select name='Plugins' style="width:200px; height:30px;">  
+                   <option value="">本月</option>  
+                   <option value="">上月</option>  
+                   <option value="">2017/11</option>
+                   <option value="">2017/10</option>  
+                   <option value="">2017/09</option>  
+              		 </select>  
+               			 
+           		   </form>  
+        		   </div>
+             </div>
+             <!--以下是数据-->
+             <div class="row math">
+             	<div class="col-xs-2">
+                	<span>0.16元</span>
+                    <div class="math-m">收款6笔</div>
+                </div>
+                <div class="col-xs-2">
+                	<span>-0.00</span>
+                    <div class="math-m">退款0笔</div>
+                </div>
+                <div class="col-xs-2">
+                	<span>0.05元</span>
+                    <div class="math-m">平台优惠1笔</div>
+                </div>
+                <div class="col-xs-2">
+                	<span>0.00元</span>
+                    <div class="math-m">商家优惠0笔</div>
+                </div>
+                <div class="col-xs-2" style="border-right:hidden;">
+                	<span>0.01元</span>
+                    <div class="math-m">客单价</div>
+                </div>
+             </div>
+             
+            <!-- 以下是月下半部分内容-->
+            <ul id="myTab" class="nav nav-tabs">
+				<li class="active">
+					<a href="#money2" data-toggle="tab">金额</a>
+				</li>
+				<li><a href="#number2" data-toggle="tab">笔数</a></li>
+			</ul>
+      
+      		
+            <div id="myTabContent1" class="tab-content">
+				<div class="tab-pane fade in active" id="money2">
+					<img src="../img/4.jpg" width="836" height="300">
+				</div>
+				<div class="tab-pane fade" id="number2">
+					<img src="../img/5.jpg" width="836" height="300">
+				</div>
+	
+			</div>
+    </div>   
+  
+  
+  
+  
+  
+    
+ </div>     
+    
+    
+    
+    
+    
+  
+</div>
+</div>
+</body>
+</html>

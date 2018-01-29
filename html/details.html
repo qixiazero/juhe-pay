@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>详情</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/details.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	function aaa(data) {
+		var list = document.getElementsByTagName("li");
+		for(var i=0;i<list.length;i++){
+			list[i].className = '';
+		}
+		document.getElementById(data).className='active';		
+	}
+</script>
+
+<script>
+		document.getElementById('photo').addEventListener('change',function(e){
+		
+		var files = this.files;
+		var img = new Image();
+		var reader = new FileReader();
+		reader.readAsDataURL(files[0]);
+		reader.onload = function(e){
+			var mb = (e.total/1024)/1024;
+			if(mb>= 2){
+				alert('文件大小大于2M');
+				return;
+			}
+			img.src = this.result;
+			img.style.width = "80%";
+			document.getElementById('click').style.width="80px";
+			document.getElementById('click').style.height="80px";
+			document.getElementById('click').innerHTML = '';
+			document.getElementById('click').appendChild(img);
+		}
+	});
+	</script>
+
+<style>
+body {
+	
+	font-family: 'microsoft yahei', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.nav-pills > li > a {
+	border-radius: 0px;
+	padding-left: 20px;
+	color: #333;
+}
+.pull-left img {
+	margin-left: 20px;
+	margin-right: 10px;
+	padding-top: 25px;
+}
+
+element.style {
+	padding-left: 45px;
+}
+.nav-stacked li a {
+	padding-left: 45px;
+}
+p {
+	margin: 0px 0 5px;
+	font-size: 16px;
+	color: #888;
+	border-top: 1px solid #eee;
+	padding-top: 25px;
+}
+td, th {
+	padding: 0;
+	border-right: 1px solid #eee;
+}
+.header1 p{padding-top:0px;}
+.photo p{
+	border:hidden;
+	}
+	.photo img{margin-left:50px;
+	margin-top:-50px;}
+.list{margin-bottom:20px;}	
+.long{position: absolute;
+  top: 325px;
+  left: 486px;}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="header1">
+      <p>服务电话：400-060-0551</p>
+    </div>
+    <div class="header2 clear"> 
+    <img src='../img/logo.png'width="190"height="33"alt="logo" title="logo">
+      <span>退出</span>
+      <span class="top-line-r">|</span>
+      <span>你好，上海鸿鸣信息科技有限公司安徽分公司</span>
+    </div>
+  </div>
+  <!--以上是头部内容-->
+  <div class="main-content">
+    <div class="content">
+      <table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tbody>
+          <tr>
+            <td width="200"><div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p style="border-top:none;">账户中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation"  id="li1" onclick="aaa('li1')"><a href="user-message.html" target="main">商户信息</a></li>
+                <li role="presentation" id="li2" onclick="aaa('li2')"><a href="security-setting.html" target="main">安全设置</a></li>
+                <li role="presentation" id="li3" onclick="aaa('li3')"><a href="Subaccount.html" target="main">子账号</a></li>
+                <li role="presentation" id="li4" onclick="aaa('li4')"><a href="contract-management.html" target="main">签约管理</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p>门店管理</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li5" onclick="aaa('li5')"><a href="my-store.html" target="main">我的门店</a></li>
+                <li role="presentation"><a href="cashier.html" target="main">收银员</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p>交易查询</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation"id="li6" onclick="aaa('li6')" ><a href="aggregate-query.html" target="main">汇总查询</a></li>
+                <li role="presentation" id="li7" onclick="aaa('li7')"><a href="detailed-inquiry.html" target="main">明细查询</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p>会员管理</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li8" onclick="aaa('li8')"><a href="membership-import.html" target="main">会员导入</a></li>
+                <li role="presentation" id="li9" onclick="aaa('li9')"><a href="registered-members.html" target="main">注册会员列表</a></li>
+                <li role="presentation" id="li10" onclick="aaa('li10')"><a href="public-number-list.html" target="main">会员公众号列表</a></li>
+                <li role="presentation" id="li11" onclick="aaa('li11')"><a href="member-pay.html" target="main">支付会员列表</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="营销中心"></div>
+              <p>营销中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li12" onclick="aaa('li12')"><a href="platform-activity.html" target="main">平台活动</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="数据中心"title="数据中心"></div>
+              <p>数据中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li3" onclick="aaa('li3')"><a href="transaction.html" target="main">交易分析</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="信息中心"title="信息中心"></div>
+              <p>信息中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li14" onclick="aaa('li14')"><a href="help.html" target="main">帮助中心</a></li>
+                <li role="presentation"  class="active" id="li15" onclick="aaa('li15')"><a href="notice.html" target="main">平台公告</a></li>
+              </ul></td>
+            <td width="1000">
+            <!--<iframe src="user-message.html"width="1000"alt="聚合支付"title="聚合支付" frameborder="0" name="main" scrolling="no"height="1100"></iframe>-->
+            
+   <!-- 以下详情的标题-->
+        <div class="top-text">
+        	<span class="sign-up-t">公告列表></span>公告详情
+        </div>
+        <!--以下是详情-标题-->
+        <div class="row list">
+        	
+            <div class="col-xs-2">标题：</div>
+            <div class="col-xs-6">支付宝奖励金活动</div>
+        </div>
+        <!--以下是详情-缩略图-->
+        <div class="row list">
+        	
+            <div class="col-xs-2">缩略图：</div>
+            <div class="col-xs-6"><img src="../img/2.jpg" width="200" height="200"></div>
+        </div>
+         <!--以下是详情-发布时间-->
+        <div class="row list">
+        	
+            <div class="col-xs-2">发布时间：</div>
+            <div class="col-xs-6">2017-08-25 18:37:20
+        	</div>
+        </div>
+         <!--以下是详情-内容-->
+        <div class="row list">
+        	
+            <div class="col-xs-2">内容：</div>
+            <div class="col-xs-6">奖励金活动，是由支付宝官方发起的无现金社会倡议中的一个奖励计划。针对消费者在线下商家使用支付宝付款，可以获得支付宝官方出资提供的奖励金，奖励金累积后可以在支付时直接抵扣。商家参与奖励金活动，有助于提升店铺的非现金收银能力。</div>
+        </div>
+        
+            </td>
+          </tr>
+      </table>
+</div>
+</div>
+</body>
+</html>

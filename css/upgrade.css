@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{width:100%;}
+.content{width:1000px;background:#fff; margin:auto;}
+.top-text{ 
+width:100%;
+
+margin:auto;
+padding-left:30px;
+border-bottom:1px solid #eee;
+}
+
+
+
+
+.top-text{font-size:18px;
+color:#333;
+line-height:80px;
+height:80px;
+  margin-bottom: 30px;
+}
+.sign-up-t{color:#888;}
+.top-title{margin-left:30px;
+font-size:14px;
+color:#888;
+border-left:4px solid #36F;
+padding-left:10px;
+margin-top:10px;
+margin-bottom:10px;
+}
+/*以下是小标题修饰*/
+.col-xs-12{font-size:14px;
+padding-left:5px; 
+border-left:4px solid #1188f6;
+margin-left:30px; 
+margin-top:10px;
+margin-bottom:10px;}
+
+.list-message>.col-xs-2{text-align:right;
+margin-top:10px;
+margin-bottom:10px;
+font-size:14px;}
+
+.list-message>.col-xs-10{
+margin-top:10px;
+margin-bottom:10px;
+font-size:14px;}
+
+.list-message>.col-xs-4{
+margin-top:10px;
+margin-bottom:10px;
+font-size:14px;}
+
+.list-message>.col-xs-6{
+margin-top:10px;
+margin-bottom:10px;
+font-size:14px;}
+.col-xs-4 input{width:140px;}
+.list-message>.col-xs-2 span{color:#f00;}
+.accent{color:#1188f6;}
+.title-1>.col-xs-12{border:hidden;}
+.click{border:1px dashed #666;
+width:80px;
+height:80px;
+margin-left: 32px;}
+.click img{text-align:center !important;}
+.click span{text-align:center !important;}
+
+.change{
+    opacity: 0;
+}
+.title-3{margin-top:20px; margin-bottom:5px; text-align:left !important; margin-left:-18px !important;}
+.picture-name>.col-xs-2 {
+  width: 13.3% !important; 
+  text-align:left !important;
+  padding-left:20px;
+  margin-bottom:-16px;
+  margin-top:20px;
+}
+.picture>.col-xs-2 {
+  width: 15.5% !important; 
+  text-align: center !important;
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+
+.user-message{margin-left:20px;}
+.picture{margin-left:0px;}
+
+.picture-name{margin-right: 100px !important;
+  margin-left: 20px !important;}
+  .title-third{margin-top:20px;
+  margin-bottom:-20px !important;}
+  .btn1{text-align:right;
+ }
+ .btn-primary{width:100px !important;}
+ .forth-btn{padding-bottom:20px;
+ margin-top:20px;}

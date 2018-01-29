@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{width:100%;}
+.content{width:1000px;background:#fff; margin:auto;}
+.top-text{ 
+width:100%;
+
+
+padding-left:30px;
+border-bottom:1px solid #eee;
+}
+.top-text{font-size:18px;
+color:#333;
+line-height:80px;
+height:80px;
+  margin-bottom: 30px;
+}
+
+
+.t-tab{background:#eee;}
+.t-tab span{float:left; line-height:44px;height:44px; margin-left:30px;}
+.t-tab .list{float:right; margin-right:30px;}
+.list1{margin-top:20px;}
+.list1 option{padding:5px;}
+.nav-tabs>.list-l{margin-left:30px;}
+/*以上是日周月tab切换*/
+.math>.col-xs-2{text-align:center !important; border-right:1px solid #ccc;
+margin-top:20px !important; padding:5px 0px;}
+.math>.col-xs-2 span{font-size:14px;color:#333;}
+.math-m{color:#888; font-size:12px; margin-top:20px;}
+.math{margin:auto !important; border-bottom:1px solid #ccc; padding-bottom:20px; 
+margin-bottom:20px !important;}
+/*以上是收退款等数据修饰*/
+.money-d{margin-top:20px;}
+/*以上是金额数据分析修饰*/
+
+.nav-tabs{border-bottom:hidden !important;margin-top:10px !important; margin-bottom:10px !important ; height:80% !important;}
+.nav-tabs li{ background:#fff;
+border:1px solid #eee !important;}
+.nav-tabs>.active a{background:#c2c2c2 !important; width:100px; font-size:14px; text-align:center; border-radious:0px !important; padding:3px !important;}
+.nav-tabs a{ text-align:center; border-radious:0px !important; padding:3px !important;
+ width:100px; font-size:14px;}
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{width:100%;}
+.content{width:1000px;background:#fff; margin:auto;}
+.top-text{ 
+width:100%;
+
+margin:auto;
+padding-left:30px;
+border-bottom:1px solid #eee;
+}
+
+
+
+
+.top-text{font-size:18px;
+color:#333;
+line-height:80px;
+height:80px;
+  margin-bottom: 30px;
+}
+.sign-up-t{color:#888;}
+.top-title{margin-left:30px;
+font-size:14px;
+color:#888;
+border-left:4px solid #36F;
+padding-left:10px;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+/*以上是标题修饰*/
+.list>.col-xs-2{text-align:right !important;
+color:#333; font-size:14px;}
+.list>.col-xs-6{
+color:#888; font-size:14px;}
+td{vertical-align:top;}
+.col-xs-12{font-size:14px;
+margin-left:60px;
+border-left:5px solid #1188f6;
+padding-left:5px;}

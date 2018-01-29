@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	function aaa(data) {
+		var list = document.getElementsByTagName("li");
+		for(var i=0;i<list.length;i++){
+			list[i].className = '';
+		}
+		document.getElementById(data).className='active';
+	}
+</script>
+        
+<style>
+.nav-pills > li > a {
+	border-radius: 0px;
+	padding-left: 20px;
+	color: #333;
+}
+.pull-left img {
+	margin-left: 25px;
+	margin-right: 17px;
+	padding-top: 30px;
+}
+
+element.style {
+	padding-left: 45px;
+}
+.nav-stacked li a {
+	padding-left: 60px;
+        font-size: 14px;
+}
+p {
+	margin: 0px 0 10px;
+	font-size: 14px;
+	color: #888;
+	padding-top: 30px;
+}
+td, th {
+	padding: 0;
+	border-right: 1px solid #eee;
+}
+.header1 p{padding-top:0px;}
+
+</style>
+</head>
+
+<body>
+<div class="wrap">
+        <!--头部内容-->
+        <div class="top">
+                <div class="header1">
+                        <p>服务电话：400-060-0551</p>
+                </div>
+                <div class="header2 clear"> 
+                        <img src="../img/logo.png" width="190" height="33" alt="logo" title="logo">
+                        <span>退出</span>
+                        <span class="top-line-r">|</span>
+                        <span>你好，上海鸿鸣信息科技有限公司安徽分公司</span>
+                </div>
+        </div>
+  
+        <div class="main-content">
+                <div class="content">
+                        <table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tbody>
+                                        <tr class="vertical-align-t">
+                                                <td width="200">
+                                                        <div class="pull-left">
+                                                                <img src="../img/index-person.png" width="18" alt="账户中心" title="账户中心">
+                                                        </div>
+                                                        <p style="border-top:none;">账户中心</p>
+                                                        <ul class="nav nav-pills nav-stacked nav-left-pills nav-group">
+                                                                <li role="presentation" class="active" id="li1" onclick="aaa('li1')">
+                                                                        <a href="user-message.html" target="main">商户信息</a>
+                                                                </li>
+                                                                <li role="presentation" id="li2" onclick="aaa('li2')">
+                                                                        <a href="security-setting.html" target="main">安全设置</a>
+                                                                </li>
+                                                                <li role="presentation" id="li3" onclick="aaa('li3')">
+                                                                        <a href="Subaccount.html" target="main">子账号</a>
+                                                                </li>
+                                                                <li role="presentation" id="li4" onclick="aaa('li4')">
+                                                                        <a href="contract-management.html" target="main">签约管理</a>
+                                                                </li>
+                                                        </ul>
+                                                        <div class="pull-left">
+                                                                <img class="padding-top-15" src="../img/index-store.png" width="18" alt="门店管理" title="门店管理">
+                                                        </div>
+                                                        <p class="padding-top-15">门店管理</p>
+                                                        <ul class="nav nav-pills nav-stacked nav-group nav-left-pills">
+                                                                <li role="presentation" id="li5" onclick="aaa('li5')">
+                                                                        <a href="my-store.html" target="main">我的门店</a>
+                                                                </li>
+                                                                <li role="presentation">
+                                                                        <a href="cashier.html" target="main">收银员</a>
+                                                                </li>
+                                                        </ul>
+                                                        <div class="pull-left">
+                                                                <img class="padding-top-15" src="../img/index-save.png" width="18" alt="交易查询" title="交易查询">
+                                                        </div>
+                                                        <p class="padding-top-15">交易查询</p>
+                                                        <ul class="nav nav-pills nav-stacked nav-group nav-left-pills">
+                                                                <li role="presentation" id="li6" onclick="aaa('li6')" >
+                                                                        <a href="aggregate-query.html" target="main">汇总查询</a>
+                                                                </li>
+                                                                <li role="presentation" id="li7" onclick="aaa('li7')">
+                                                                        <a href="detailed-inquiry.html" target="main">明细查询</a>
+                                                                </li>
+                                                        </ul>
+                                                        <div class="pull-left"> 
+                                                                <img class="padding-top-15" src="../img/index-plus.png" width="18" alt="会员管理" title="会员管理">
+                                                        </div>
+                                                        <p class="padding-top-15">会员管理</p>
+                                                        <ul class="nav nav-pills nav-stacked nav-group nav-left-pills">
+                                                                <li role="presentation" id="li8" onclick="aaa('li8')">
+                                                                        <a href="member-import.html" target="main">会员导入</a>
+                                                                </li>
+                                                                <li role="presentation" id="li9" onclick="aaa('li9')">
+                                                                        <a href="member-register.html" target="main">注册会员列表</a>
+                                                                </li>
+                                                                <li role="presentation" id="li10" onclick="aaa('li10')">
+                                                                        <a href="member-public.html" target="main">会员公众号列表</a>
+                                                                </li>
+                                                                <li role="presentation" id="li11" onclick="aaa('li11')">
+                                                                        <a href="member-pay.html" target="main">支付会员列表</a>
+                                                                </li>
+                                                        </ul>
+                                                        <div class="pull-left">
+                                                                <img class="padding-top-15" src="../img/index-gift.png" width="18" alt="账户中心" title="营销中心">
+                                                        </div>
+                                                        <p class="padding-top-15">营销中心</p>
+                                                        <ul class="nav nav-pills nav-stacked nav-group nav-left-pills">
+                                                                <li role="presentation" id="li12" onclick="aaa('li12')">
+                                                                        <a href="platform-activity.html" target="main">平台活动</a>
+                                                                </li>
+                                                        </ul>
+                                                        <div class="pull-left">
+                                                                <img class="padding-top-15" src="../img/index-data.png" width="18" alt="数据中心" title="数据中心">
+                                                        </div>
+                                                        <p class="padding-top-15">数据中心</p>
+                                                        <ul class="nav nav-pills nav-stacked nav-group nav-left-pills">
+                                                                <li role="presentation" id="li13" onclick="aaa('li3')"><a href="transaction.html" target="main">交易分析</a></li>
+                                                        </ul>
+                                                        <div class="pull-left">
+                                                                <img class="padding-top-15" src="../img/index-person.png" width="18" alt="信息中心" title="信息中心">
+                                                        </div>
+                                                        <p class="padding-top-15">信息中心</p>
+                                                        <ul class="nav nav-pills nav-stacked nav-left-pills">
+                                                                <li role="presentation" id="li14" onclick="aaa('li14')"><a href="help.html" target="main" >帮助中心</a></li>
+                                                                <li role="presentation" id="li15" onclick="aaa('li15')"><a href="platform-bulletin.html" target="main">平台公告</a></li>
+                                                        </ul>
+                                                </td>
+
+                                                <td width="1000">
+                                                        <iframe src="user-message.html" width="1000" alt="聚合支付" title="聚合支付" frameborder="0" name="main" scrolling="no" height="1400"></iframe>
+                                                </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                </div>
+        </div>
+</div>
+        
+        <div class="panel-footer">
+                <p>Copyright©&nbsp;2015-2018&nbsp;乐享付.All Rights Reserved</p>
+                <p>上海鸿鸣信息科技有限公司&nbsp;版权所有&nbsp;皖ICP备17015718号-1</p>     
+        </div>
+</body>
+</html>

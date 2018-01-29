@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/member-import.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>明细查询</title>
+
+</head>
+        
+<body class="container">
+        <div class="row import-title-div">
+		<div class="col-xs-6 padding-l-r-30 height-80">
+			<div>明细查询</div>
+		</div>
+                <div class="col-xs-6 padding-l-r-30 margin-t-20">
+			<button class="btn btn-primary float-r" data-toggle="modal" data-target="#myModal-import">
+				导入
+			</button>
+			<button class="btn-important btn float-r member-down-btn" href="update-store.html" target="main">
+				会员模板下载
+			</button>
+		</div>
+	</div>
+        
+        <!-- 导入模态框（Modal） -->
+	<div class="modal fade" id="myModal-import" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-tip" aria-hidden="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close font-size-36" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title font-size-14" id="myModalLabel-tip">批量导入</h4>
+				</div>
+				<div class="modal-body">
+					<!--提示语-->
+					<div class="row modal-import-tip">
+						<div class="col-xs-12 modal-import">						
+							<img src="../img/tip-blue.png" alt="">	
+							<span class="">注意说明：导入数据单次不能超过2000条，模板内的手机号码是必填字段</span>						
+						</div>																	
+					</div>					
+					<!--提交按钮-->
+					<div class="btn-container row import-btn-submit margin-t-b">
+						<div class="col-xs-12">
+                                                        <button type="button" class="btn btn-primary float-r">确定</button>
+							<button type="button" class="btn btn-default float-r margin-r-15" data-dismiss="modal">取消</button>
+						</div>						
+					</div>										
+				</div>
+		
+			</div>
+		</div>
+	</div>
+        
+        <!--提示-->
+        <div>
+                <div class="import-tip">
+                        <div class="width-img"><img class="import-img-tip" src="../img/tip-white.png" alt=""></div>
+                        <div class="width-font color-666">
+                                <p class="color-333 font-size-14 margin-t-20">提示：可以通过导入方式快速把老会员转换成电子会员</p>
+                                <p>充值方案具有三种方式，第一次导入需要选择和线下一样的充值权益方式（不可逆）</p>
+                                <p>1.充值送券----消费者充一定的金额发一批券（券可以核销）</p>
+                                <p>2.充值享折扣----消费者充一定的金额享受折扣（折扣可以打折）</p>
+                                <p class="margin-b-20">3.充值送金额----消费者充值一定的金额后以赠送金的方式赠送一定的金额（先消费充值金额，再消费赠送金模式）</p>
+                        </div>                          
+                </div>               
+        </div>
+        <!--记录-->
+        <div class="row">
+                <div class="col-xs-12 table-date">
+                        <div class="float-l">共1个记录</div>
+                        <div class="float-r">充值模式：充值送金额</div>
+                </div>
+        </div>
+        <!--数据显示-->
+        <table class="tab-pane fade in active  table table-date margin-b-0 import-table font-size-12">
+                <thead class="import-table-th">
+                        <tr>
+                                <th class="import-table-295 padding-l-30 borderRadio-l-4">导入时间</th>
+                                <th class="import-table-170">会员总人数</th>
+                                <th class="import-table-330">总余额（包括赠送余额）</th>
+                                <th class="import-table-142">赠送余额</th>
+                        </tr>
+                </thead>
+                <tbody class="account-table-tb">
+                        <tr>
+                                <td>2018-01-04 10:37:10</td>
+                                <td>3</td>
+                                <td>15</td>
+                                <td>3</td>
+                        </tr>
+                </tbody>
+        </table>        
+        <!--分页-->
+        
+        
+        
+        
+</body>
+</html>

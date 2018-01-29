@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>去签约</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/sign-up5.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	function aaa(data) {
+		var list = document.getElementsByTagName("li");
+		for(var i=0;i<list.length;i++){
+			list[i].className = '';
+		}
+		document.getElementById(data).className='active';		
+	}
+</script>
+<style>
+body {
+	
+	font-family: 'microsoft yahei', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.nav-pills > li > a {
+	border-radius: 0px;
+	padding-left: 20px;
+	color: #333;
+}
+.pull-left img {
+	margin-left: 20px;
+	margin-right: 10px;
+	padding-top: 25px;
+}
+
+element.style {
+	padding-left: 45px;
+}
+.nav-stacked li a {
+	padding-left: 45px;
+}
+p {
+	margin: 0px 0 5px;
+	font-size: 16px;
+	color: #888;
+	border-top: 1px solid #eee;
+	padding-top: 25px;
+}
+td, th {
+	padding: 0;
+	border-right: 1px solid #eee;
+}
+.header1 p{padding-top:0px;}
+.photo p{
+	border:hidden;
+	}
+	.photo img{margin-left:50px;
+	margin-top:-50px;}
+.list{margin-bottom:20px;}	
+
+</style>
+</head>
+
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="header1">
+      <p>服务电话：400-060-0551</p>
+    </div>
+    <div class="header2 clear"> 
+    <img src='../img/logo.png'width="190"height="33"alt="logo" title="logo">
+      <span>退出</span>
+      <span class="top-line-r">|</span>
+      <span>你好，上海鸿鸣信息科技有限公司安徽分公司</span>
+    </div>
+  </div>
+  <!--以上是头部内容-->
+  <div class="main-content">
+    <div class="content">
+      <table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tbody>
+          <tr>
+            <td width="200"><div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p style="border-top:none;">账户中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation"  id="li1" onclick="aaa('li1')"><a href="user-message.html" target="main">商户信息</a></li>
+                <li role="presentation" id="li2" onclick="aaa('li2')"><a href="security-setting.html" target="main">安全设置</a></li>
+                <li role="presentation" id="li3" onclick="aaa('li3')"><a href="Subaccount.html" target="main">子账号</a></li>
+                <li role="presentation" id="li4" onclick="aaa('li4')"><a href="contract-management.html" target="main">签约管理</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p>门店管理</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li5" onclick="aaa('li5')"><a href="my-store.html" target="main">我的门店</a></li>
+                <li role="presentation"><a href="cashier.html" target="main">收银员</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p>交易查询</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation"id="li6" onclick="aaa('li6')" ><a href="aggregate-query.html" target="main">汇总查询</a></li>
+                <li role="presentation" id="li7" onclick="aaa('li7')"><a href="detailed-inquiry.html" target="main">明细查询</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p>会员管理</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li8" onclick="aaa('li8')"><a href="membership-import.html" target="main">会员导入</a></li>
+                <li role="presentation" id="li9" onclick="aaa('li9')"><a href="registered-members.html" target="main">注册会员列表</a></li>
+                <li role="presentation" id="li10" onclick="aaa('li10')"><a href="public-number-list.html" target="main">会员公众号列表</a></li>
+                <li role="presentation" id="li11" onclick="aaa('li11')"><a href="member-pay.html" target="main">支付会员列表</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="营销中心"></div>
+              <p>营销中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li12" onclick="aaa('li12')"><a href="platform-activity.html" target="main">平台活动</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="数据中心"title="数据中心"></div>
+              <p>数据中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li3" onclick="aaa('li3')"><a href="transaction.html" target="main">交易分析</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="信息中心"title="信息中心"></div>
+              <p>信息中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li14" onclick="aaa('li14')"><a href="help.html" target="main">帮助中心</a></li>
+                <li role="presentation" id="li15" onclick="aaa('li15')"><a href="notice.html" target="main">平台公告</a></li>
+              </ul></td>
+            <td width="1000">
+            <!--<iframe src="user-message.html"width="1000"alt="聚合支付"title="聚合支付" frameborder="0" name="main" scrolling="no"height="1100"></iframe>-->
+            
+    
+        <div class="top-text">
+        	<span>乐享礼品生活服务有限公司</span>
+        </div>
+        <div class="user-message">
+            <ul>
+                <li class="list"> <span class="top-title">签约类型及产品</span>
+                    <ul class="first-main">
+                        <li> 
+                            <span class="second-title user-n">商户类型</span>
+                            <span class="second-content">个人</span>							
+                        </li>
+                        <li >
+                        <span class="second-title user-n">签约通道</span>
+                        <span class="second-content">平安银行</span>
+                        
+                       </li>    
+                    </ul>
+                </li>
+           
+            </ul>
+            <!-- 以上是账号基本信息结构 -->
+            <ul class="title-2">
+                <li class="list"> <span class="top-title">经营信息</span>
+                    <ul class="second-main">
+                        <li> 
+                            <span class="second-title">商户全称</span>
+                            <span class="second-content">乐享礼品生活服务有限公司</span>				
+                        </li>
+                        <li>
+                        <span class="second-title ">商户简称</span>
+                        <span class="second-content">乐享礼品</span>
+                       </li>
+                       <li>
+                        <span class="second-title ">行业类目</span>
+                        <span class="second-content">--</span>
+                       </li>  
+                       <li>
+                        <span class="second-title ">经营地址</span>
+                        <span class="second-content">安徽省 合肥市 蜀山区   潜山路320号新华国际广场C座1711室</span>
+                       </li>  
+                       <li>
+                        <span class="second-title ">客服电话</span>
+                        <span class="second-content">0551-63525551</span>
+                       </li>      
+                    </ul>
+                </li> 
+            </ul>
+            
+            <!--以下是日常联系人结构-->
+            <ul class="title-2">
+                <li class="list"> <span class="top-title">日常联系人</span>
+                    <ul class="second-main">
+                        <li> 
+                            <span class="second-title">姓名</span>
+                            <span class="second-content">刘伟朋</span>				
+                        </li>
+                        <li>
+                        <span class="second-title ">职务</span>
+                        <span class="second-content">总经理</span>
+                       </li>
+                       <li>
+                        <span class="second-title ">手机</span>
+                        <span class="second-content">15305512909</span>
+                       </li>  
+                       <li>
+                        <span class="second-title ">邮箱</span>
+                        <span class="second-content">15305512909@189.cn</span>
+                       </li>  
+                    </ul>
+                </li> 
+            </ul>
+           <!-- 以下是法人代表结构-->
+           <ul class="title-2">
+                <li class="list"> <span class="top-title">法人代表</span>
+                    <ul class="second-main">
+                        <li> 
+                            <span class="second-title">姓名</span>
+                            <span class="second-content">刘伟朋</span>				
+                        </li>
+                        <li>
+                        <span class="second-title ">证件类型</span>
+                        <span class="second-content">身份证</span>
+                       </li>
+                       <li>
+                        <span class="second-title ">法人证件编号</span>
+                        <span class="second-content">232332198107104255</span>
+                       </li>  
+                       <li>
+                        <span class="second-title ">有效期</span>
+                        <span class="second-content">2007-10-25~ 2027-10-25</span>
+                       </li>  
+                    </ul>
+                </li> 
+            </ul>
+           <!-- 以下是微信公众号配置-->
+           <ul class="title-2">
+                <li class="list"> <span class="top-title">微信公众号配置</span>
+                    <ul class="second-main">
+                        <li> 
+                            <span class="second-title">支付后关注商户公众号</span>
+                            <span class="second-content">否</span>				
+                        </li>
+                    </ul>
+                </li> 
+            </ul>
+           <!-- 以下是结算信息-->
+           <ul class="title-2">
+                <li class="list"> <span class="top-title">结算信息</span>
+                    <ul class="second-main">
+                        <li> 
+                            <span class="second-title">开户名称</span>
+                            <span class="second-content">刘伟朋</span>				
+                        </li>
+                        <li>
+                        <span class="second-title ">开户银行</span>
+                        <span class="second-content">中国工商银行 安徽 合肥 五里墩分理处</span>
+                       </li>
+                       <li>
+                        <span class="second-title ">银行账号</span>
+                        <span class="second-content">6222021302000170448</span>
+                       </li>  
+                       <li>
+                        <span class="second-title ">签约费率</span>
+                        <span class="second-content">0.40%</span>
+                       </li>  
+                    </ul>
+                </li> 
+            </ul>
+            <!--以下是证件影印件-->
+            <ul class="title-2 second-photo">
+                <li class="list" style="height:170px;"> <span class="top-title">证件影印件</span>
+                    <ul class="second-main">
+                        <li> 
+                            <div class="photo pull-left">
+                            <p class="second-title">身份证正面</p>
+                           	<p><img src="../img/1.png"width="80"alt="身份证正面"></p>		
+                            </div>	
+                             <div class="photo pull-left">
+                            <p class="second-title ">身份证反面</p>
+                           	<p><img src="../img/1.png"width="80"alt="身份证反面"></p>		
+                            </div>	
+                             <div class="photo pull-left">
+                            <p class="second-title">手持身份证</p>
+                           	<p><img src="../img/1.png"width="80"alt="手持身份证"></p>		
+                            </div>	
+                             <div class="photo pull-left">
+                            <p class="second-title">其他</p>
+                           	<p><img src="../img/1.png"width="80"alt="其他"></p>		
+                            </div>		
+                      </li>
+                    </ul>
+                </li> 
+            </ul>
+            <!--以下是经营场所照片-->
+            <ul class="title-2 second-photo">
+                <li class="list" style="height:170px;"> <span class="top-title">经营场所照片</span>
+                    <ul class="second-main">
+                        <li> 
+                            <div class="photo pull-left">
+                            <p class="second-title">门头</p>
+                           	<p><img src="../img/1.png"width="80"alt="身份证正面"></p>		
+                            </div>	
+                             <div class="photo pull-left">
+                            <p class="second-title ">内景</p>
+                           	<p><img src="../img/1.png"width="80"alt="身份证反面"></p>		
+                            </div>	
+                      </li>
+                    </ul>
+                </li> 
+            </ul>
+             <!-- 按钮-->
+           <div class="row sign-btn">
+           <div class="col-xs-2"></div>
+       		 <div class="col-xs-2 btn1">
+             <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">提交签约 </button>
+             </div>
+       		 <div class="col-xs-2 btn2">
+             <button type="button" class="btn btn-default" data-dismiss="modal" style="width:100px;"><a href="sign-up4.html">返回上一步</a></button>
+            </div>
+            <div class="col-xs-4"></div>
+       
+       </div> 
+       
+       
+  <!--     以下是提交签约模态框-->
+       <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" 
+                            aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="edit-name modal-header">
+                                           <button type="button" class="close" data-dismiss="modal" 
+                                           aria-hidden="true"> &times; </button>
+                                            <h4 class="modal-title" id="myModalLabel"> 
+                                            重要提示 
+                                            </h4>
+                                        </div>
+                                        <!--以上是模态框头部内容-->
+                                        <div class="middle">
+                                            <div class="modal-body">
+                                            	<div class="row">
+                                                	
+                                                    
+                                                    <div class="colo-xs-4">
+                                                    <span class="sec">√</span>
+                                                    <span class="sec1">提交签约成功，请等待审核结果</span>
+                                                    <div class="sec2">审核时间1-3个工作日</div>
+                                                    </div>
+                                            	</div>
+                                            </div>
+                                         </div>
+                                        <!--以上是模态框中间内容-->
+                                        <div class="foot">
+                                            <div class="modal-footer">
+                                               <!-- <button type="button" class="btn btn-primary"> 确定 </button>-->
+                                                <span class="cancel">
+                                                <button type="button" class="btn btn-primary" data-dismiss="modal" style="width:100px;">我知道了 </button>
+                                                </span>
+                                             </div>
+                                        </div>
+                                        <!--以上是模态框底部按钮-->
+                                    </div>
+                                    <!-- /.modal-content --> 
+                                </div>
+                                <!-- /.modal --> 
+                            </div>  
+            </td>
+          </tr>
+      </table>
+   
+</div>
+</body>
+</html>

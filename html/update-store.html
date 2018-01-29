@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="../css/my-store.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container">
+        <div class="row myStore-title-div">
+		<div class="col-xs-6 padding-l-r-30">
+			<div>修改普通门店</div>
+		</div>
+	</div>
+        <div class="row">
+                <div class="col-xs-12 update-info">基本信息</div>
+        </div>
+        
+        <!--门店名称-->
+        <div class="row margin-t-20 store-input">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">门店名称：</span>
+                        <span class="float-r store-star-red">*</span>							
+                </div>
+                <div class="col-xs-3">
+                        <input type="text" class="form-control width-225" placeholder="">
+                </div>		
+                <div class="col-xs-3">
+                        <input type="text" class="form-control width-225" placeholder="">
+                </div>       
+        </div>
+        
+         <!--门店地址-->
+        <div class="row margin-t-20 store-input">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">门店地址：</span>
+                        <span class="float-r store-star-red">*</span>							
+                </div>
+                <div class="col-xs-5">
+                        <input type="text" class="form-control width-355" placeholder="">
+                </div>		
+                <div class="col-xs-1 myStore-title margin-0 padding-r-0">
+                       <button class="btn btn-primary float-r">
+				地图定位
+			</button>
+                </div> 
+        </div>
+        <div class="row margin-t-20">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-6 padding-r-0">
+                        <input type="text" class="form-control" placeholder="">
+                </div>
+        </div>
+        
+        <!--提示-->
+        <div class="row margin-t-10 font-size-12">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-6 myStore-rate">
+                        <a class="margin-r-5" href="">正确地址示例</a>
+                        <span class="update-tip">地址如有偏差可点击地图进行手动定位</span>
+                </div>
+        </div>
+        
+        <!--地图-->
+        <div class="row margin-t-10 font-size-12">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-6 padding-r-0">
+                        <div class="update-map"></div>
+                </div>
+        </div>
+        <div class="row margin-t-20">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-6 padding-r-0">
+                        <input type="text" class="form-control" placeholder="">
+                </div>
+        </div>
+        
+         <!--门店电话-->
+        <div class="row margin-t-20 store-input">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">门店电话：</span>						
+                </div>
+                <div class="col-xs-3">
+                        <input type="text" class="form-control" placeholder="13888888888">
+                </div>		
+        </div>
+        
+         <!--备注-->
+        <div class="row margin-t-20 store-input">
+                <div class="col-xs-2 height-34">
+                        <span class="float-r">备注：</span>						
+                </div>
+                <div class="col-xs-5">
+                        <textarea class="form-control width-355" placeholder="请输入备注"></textarea>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5 update-model-tip">限30个字</div>
+        </div>
+        
+        <!--提交按钮-->
+        <div class="btn-container row account-submit margin-t-b">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5 myStore-title">
+                        <button type="button" class="btn btn-primary margin-r-30">保存</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                </div>						
+        </div>
+        
+        
+</body>
+</html>
