@@ -224,4 +224,12 @@ margin-left:200px;}
 .message img{margin-right:10px;}
 .message .p1{margin-bottom:20px;}
 
+.col-xs-8{font-size:12px; color:#888;
+margin-left: 160px;
+  margin-top: -40px;
+}
+.margin-t-20>.col-xs-4{text-align:right;
+width:30%; font-size:12px;}
+.col-xs-10{width: 86.333333% !important;}
+.padding-t-0{background:##fffaeb;}
 
