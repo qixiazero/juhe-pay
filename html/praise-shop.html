@@ -1,0 +1,747 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>口碑开店</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/forth-sub.css">
+<link rel="stylesheet" type="text/css" href="../css/praise-shop.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	function aaa(data) {
+		var list = document.getElementsByTagName("li");
+		for(var i=0;i<list.length;i++){
+			list[i].className = '';
+		}
+		document.getElementById(data).className='active';		
+	}
+</script>
+
+<script>
+		document.getElementById('photo').addEventListener('change',function(e){
+		
+		var files = this.files;
+		var img = new Image();
+		var reader = new FileReader();
+		reader.readAsDataURL(files[0]);
+		reader.onload = function(e){
+			var mb = (e.total/1024)/1024;
+			if(mb>= 2){
+				alert('文件大小大于2M');
+				return;
+			}
+			img.src = this.result;
+			img.style.width = "80%";
+			document.getElementById('click').style.width="80px";
+			document.getElementById('click').style.height="80px";
+			document.getElementById('click').innerHTML = '';
+			document.getElementById('click').appendChild(img);
+		}
+	});
+	</script>
+
+<style>
+body {
+	
+	font-family: 'microsoft yahei', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.nav-pills > li > a {
+	border-radius: 0px;
+	padding-left: 20px;
+	color: #333;
+}
+.pull-left img {
+	margin-left: 20px;
+	margin-right: 10px;
+	padding-top: 25px;
+}
+
+element.style {
+	padding-left: 45px;
+}
+.nav-stacked li a {
+	padding-left: 45px;
+}
+p {
+	margin: 0px 0 5px;
+	font-size: 16px;
+	color: #888;
+	border-top: 1px solid #eee;
+	padding-top: 25px;
+}
+td, th {
+	padding: 0;
+	border-right: 1px solid #eee;
+}
+.header1 p{padding-top:0px;}
+.photo p{
+	border:hidden;
+	}
+	.photo img{margin-left:50px;
+	margin-top:-50px;}
+.list{margin-bottom:20px;}	
+.long{position: absolute;
+  top: 325px;
+  left: 486px;}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="header1">
+      <p>服务电话：400-060-0551</p>
+    </div>
+    <div class="header2 clear"> 
+    <img src='../img/logo.png'width="190"height="33"alt="logo" title="logo">
+      <span>退出</span>
+      <span class="top-line-r">|</span>
+      <span>你好，上海鸿鸣信息科技有限公司安徽分公司</span>
+    </div>
+  </div>
+  <!--以上是头部内容-->
+  <div class="main-content">
+    <div class="content">
+      <table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tbody>
+          <tr>
+            <td width="200"><div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p style="border-top:none;">账户中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation"  id="li1" onclick="aaa('li1')"><a href="user-message.html" target="main">商户信息</a></li>
+                <li role="presentation" id="li2" onclick="aaa('li2')"><a href="security-setting.html" target="main">安全设置</a></li>
+                <li role="presentation" id="li3" onclick="aaa('li3')"><a href="Subaccount.html" target="main">子账号</a></li>
+                <li role="presentation" id="li4" onclick="aaa('li4')"><a href="contract-management.html" target="main">签约管理</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p>门店管理</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li5" onclick="aaa('li5')"><a href="my-store.html" target="main">我的门店</a></li>
+                <li role="presentation"><a href="cashier.html" target="main">收银员</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p>交易查询</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation"id="li6" onclick="aaa('li6')" ><a href="aggregate-query.html" target="main">汇总查询</a></li>
+                <li role="presentation" id="li7" onclick="aaa('li7')"><a href="detailed-inquiry.html" target="main">明细查询</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="账户中心"></div>
+              <p>会员管理</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li8" onclick="aaa('li8')"><a href="membership-import.html" target="main">会员导入</a></li>
+                <li role="presentation" id="li9" onclick="aaa('li9')"><a href="registered-members.html" target="main">注册会员列表</a></li>
+                <li role="presentation" id="li10" onclick="aaa('li10')"><a href="public-number-list.html" target="main">会员公众号列表</a></li>
+                <li role="presentation" id="li11" onclick="aaa('li11')"><a href="member-pay.html" target="main">支付会员列表</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="账户中心"title="营销中心"></div>
+              <p>营销中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li12" onclick="aaa('li12')"><a href="platform-activity.html" target="main">平台活动</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="数据中心"title="数据中心"></div>
+              <p>数据中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li3" onclick="aaa('li3')"><a href="transaction.html" target="main">交易分析</a></li>
+              </ul>
+              <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="信息中心"title="信息中心"></div>
+              <p>信息中心</p>
+              <ul class="nav nav-pills nav-stacked ">
+                <li role="presentation" id="li14" onclick="aaa('li14')"><a href="help.html" target="main">帮助中心</a></li>
+                <li role="presentation" id="li15" onclick="aaa('li15')"><a href="notice.html" target="main">平台公告</a></li>
+              </ul></td>
+            <td width="1000">
+            <!--<iframe src="user-message.html"width="1000"alt="聚合支付"title="聚合支付" frameborder="0" name="main" scrolling="no"height="1100"></iframe>-->
+            
+   <!-- 以下是口碑开店的标题-->
+        <div class="top-text">
+        	口碑开店
+        </div>
+       <!--以下是口碑开店步骤-->
+		<div class="am-u-sm-12 am-u-sm-centered status" style="width:90%;">
+    
+        <ul class="nav pointer-events">
+            <li id="stepone">
+                <a class="active">
+                    <span>1</span>
+                    填写门店信息 <i class="greenborder"></i>
+                </a>
+            </li>
+            <li id="steptwo">
+                <a class="">
+                    <span>2</span>
+                    填写经营资料
+                </a>
+            </li>
+            <li id="stepthree">
+                <a class="">
+                    <span>3</span>
+                    提交结果
+                </a>
+            </li>
+        </ul>
+    </div>
+       <!--以下是主要信息-->
+<div class="addStoreInformation">
+	   <div class="am-g-t">
+                    <div class="am-u-sm-3 am-u-sm-offset-1 am-u-end info">
+                       
+                         主要信息
+                      
+                    </div>
+        </div>
+		<!--以下是第一行-->
+		<div class="row sub-three">
+                
+                <div class="col-xs-2 height-34 padding-r-0 width-100">
+                        <span>*</span>类目：
+                </div>
+                <div class="col-xs-3 height-34 aggregate-date-store">
+                        <select id="one" class="form-control">
+                                <option></option>
+                        </select>
+                </div>
+                <div class="col-xs-3 height-34 aggregate-date-store">
+                        <select id="two" class="form-control">
+                                <option></option>
+                        </select>
+                </div>  
+                <div class="col-xs-3 height-34 aggregate-date-store">
+                        <select id="three" class="form-control">
+                                <option></option>
+                        </select>
+                </div> 
+        </div>
+        
+        
+       
+        
+<script type="text/javascript">
+        var oone=document.getElementById("one");
+        var otwo=document.getElementById("two");
+        var three=document.getElementById("three");
+        //var four=document.getElementById("four");
+        document.getElementById("two").style.visibility="hidden";
+        document.getElementById("three").style.visibility="hidden";
+        //document.getElementById("four").style.visibility="hidden";
+        var str='';
+        //        第一个数组
+        var arr1=[{"id":"1","value":"请选择类目"},
+				{"id":"2","value":"美食"},
+				{"id":"3","value":"超市便利"},
+				{"id":"4","value":"K歌"},
+				{"id":"5","value":"休闲娱乐"},
+				{"id":"6","value":"美发/美容/美甲"},
+				{"id":"7","value":"运动健身"},
+				{"id":"8","value":"宠物"},
+				{"id":"9","value":"结婚"},
+				{"id":"10","value":"摄影"},
+				{"id":"11","value":"亲子"},
+				{"id":"12","value":"洗衣"},
+				{"id":"13","value":"书店"},
+				{"id":"14","value":"购物"},
+				{"id":"15","value":"爱车"},
+				{"id":"16","value":"教育培训"},
+				{"id":"17","value":"医疗健康"},
+				{"id":"18","value":"航旅"},
+				{"id":"19","value":"专业销售批发"},
+				{"id":"20","value":"政府/社会组织"},
+				{"id":"21","value":"电影"},
+				{"id":"22","value":"生活服务"},
+				
+		];
+        //        循环便利数组
+        for(var i=0;i<arr1.length;i++){
+                str+="<option value="+arr1[i].id+">"+arr1[i].value+"</option>"
+        }
+        oone.innerHTML=str;
+        //        第一个数组
+        var arr2 = {
+                '1':['101@'],
+                '2':[
+					 '202@中餐',
+					 '203@火锅',
+					 '204@烧烤',
+					 '205@其他美食',
+					 '206@汤/粥/煲/砂锅/炖菜',
+					 '207@快餐',
+					 '208@休闲食品',
+					 '209@小吃',
+					 '2010@休闲茶饮',
+					 '2011@烘焙蛋糕'
+					],
+                '3':[
+					 '302@超市',
+					 '303@个人护理',
+					 '304@便利店',
+					 '305@烟酒杂货',
+					 '306@自动售卖机',
+					 '307@综合特产'
+					],
+                '4':['401@',
+					 '402@KTV',
+					 '403@录音棚',
+					 '404@迷你KTV'
+					],
+                '5':['501@',
+					 '502@中医养生',
+					 '503@足疗按摩',
+					 '504@洗浴/桑拿会所',
+					 '505@网吧网咖',
+					 '506@游乐游乐',
+					 '507@图书馆',
+					 '508@密室',
+					 '509@桌面游戏',
+					 '5010@cs拓展',
+					 '5011@动物园/游乐园',
+					 '5012@cs手工DIY',
+					 '5013@文化艺术'
+					
+					],
+				'6':['601@',
+					 '602@美甲/手护',
+					 '603@SPA/美容/美体',
+					 '604@美容美发',
+					 '605@美容美甲',
+					 '606@美发美甲',
+					 '607@美发',
+					 '608@彩妆造型',
+					 '609@美睫',
+					 '6010@产后塑形',
+					 '6011@纹绣',
+					 '6012@纹身',
+					 '6013@祛痘',
+					 '6014@整形'
+					],
+                '7':['701@',
+					 '702@篮球场',
+					 '703@舞蹈',
+					 '704@网球场',
+					 '705@乒乓球馆',
+					 '706@游泳馆',
+					 '707@美发',
+					 '708@羽毛球馆',
+					 '709@桌球馆',
+					 '7010@瑜伽',
+					 '7011@足球场',
+					 '7012@武术场馆',
+					 '7013@溜冰场',
+					 '7014@保龄球馆',
+					 '7015@壁球场',
+					 '7016@排球场',
+					 '7017@高尔夫球场',
+					 '7018@体育场馆',
+					 '7019@健身中心',
+					 '7020@射箭',
+					 '7021@马术',
+					 '7022@滑雪'
+					],
+                '8':['801@',
+					 '802@宠物店',
+					 '803@宠物医院'
+					],
+                '9':['901@',
+					 '902@婚礼策划',
+					 '903@婚纱礼服',
+					 '904@婚车租赁'
+					],
+                '10':['1001@',
+					 '1002@婚纱摄影',
+					 '1003@儿童摄影',
+					 '1004@孕妇摄影',
+					 '1005@艺术写真',
+					 '1006@跟拍',
+					 '1007@证件照',
+					 '1008@商业摄影'
+					 
+					 ],
+				 '11':['1101@',
+					 '1102@亲子游玩',
+					 '1103@亲子游泳',
+					 '1104@科普场馆',
+					 '1105@亲子DIY',
+					 '1106@早教中心',
+					 '1107@少儿外语',
+					 '1108@少儿才艺',
+					 '1109@亲子服务',
+					 '11010@产后恢复',
+					 '11011@月子服务',
+					 '11010@少儿推拿',
+					 '11011@少儿运动'
+					  ],
+                '12':['1201@',
+					 '1202@洗衣家纺',
+					 '1203@鞋帽清洗',
+					 '1204@奢侈品养护',
+					 '1205@自助洗衣'				 
+					 
+					 ],
+                
+                '14':['1401@',
+					 '1402@本地购物',
+					 '1403@烟酒（只开酒）',
+					 '1404@当地特色/保健品',
+					 '1405@服装饰品',
+					 '1406@化妆品',
+					 '1407@茶叶', 
+					 '1408@珠宝饰品',
+					 '1409@鞋包',
+					 '14010@亲子购物',
+					 '14011@婚礼小商品',
+					 '14012@运动户外商品',
+					 '14013@办公用品',
+					 '14014@文化艺术店',
+					 '14015@品牌折扣店',
+					 '14016@数码产品',
+					 '14017@家用电器',
+					 '14018@家居家纺',
+					 '14019@建材',
+					 '14020@特色集市',
+					 '14021@眼镜店',
+					 '14022@菜市场',
+					 '14023@成人用品',
+					 '14024@报刊/音像/书籍',
+					 '14025@烟花爆竹',
+					 '14026@国外代购及免税店'
+					 ],
+                '15':['1501@',
+					 '1502@洗车',
+					 '1503@4s店/汽车销售',
+					 '1504@配件/车饰',
+					 '1505@汽车保险',
+					 '1506@维修保养',
+					 '1507@汽车美容',
+					 '1508@汽车租赁',
+					 '1509@停车场',
+					 '15010@加油站'
+					 
+					 ],
+				'16':['1601@',
+					 '1602@职业技术培训',
+					 '1603@外语',
+					 '1606@音乐',
+					 '1607@升学辅导',
+					 '1608@体育',
+					 '1609@美术',
+					 '16010@留学',
+					 '7011@驾校',
+					 '7012@兴趣生活',
+					 '7013@教育院校'
+					
+					 ],
+                '17':['1701@',
+					 '1702@医院',
+					 '1703@中医',
+					 '1704@齿科',
+					 '1705@药店',
+					 '1706@急救服务',
+					 '1707@妇幼医院',
+					 '1708@保险中心'
+					 ],
+                '18':['1801@',
+					 '1802@景区',
+					 '1803@客栈',
+					 '1804@汽车站',
+					 '1805@酒店',
+					 '1806@旅行社',
+					 '1807@酒店式公寓', 
+					 '1808@度假村',
+					 '1809@航空票务',
+					 '18010@货运代理/报关行',
+					 '18011@铁路客运',
+					 '18012@公共交通',
+					 '18013@出租车服务',
+					 '18014@长途公路客运',
+					 '18015@游轮/巡游航线',
+					 '18016@出租船只',
+					 '18017@船舶/海运服务',
+					 '18018@路桥通行费',
+					 '18019@机场服务',
+					 '18020@高铁服务'
+					 ],
+                '19':['1901@',
+					 '1902@汽车/运输工具',
+					 '1903@办公用品批发',
+					 '1904@工业产品批发零售',
+					 '1905@药品医疗批发',
+					 ],
+                '20':['2001@',
+					  '2002@政府服务',
+					  '2003@社会组织'
+					 ],
+				 '21':['2101@',
+					  '2102@电影院',
+					  '2103@私人影院'
+					  ],
+                '22':['1401@',
+					 '1402@家居家装',
+					 '1403@通讯',
+					 '1404@鲜花',
+					 '1405@送水站',
+					 '1406@搬家',
+					 '1407@回收', 
+					 '1408@开锁',
+					 '1409@管道疏通',
+					 '14010@家电维修',
+					 '14011@焊接维修',
+					 '14012@家具维修/翻新',
+					 '14013@公共事业缴费',
+					 '14014@物流',
+					 '14015@快递服务',
+					 '14016@家政',
+					 '14017@互联网相关服务',
+					 '14018@文字/翻译',
+					 '14019@灭虫/消毒',
+					 '14020@清洁/保养/门卫',
+					 '14021@农业合作与农具',
+					 '14022@丧仪殡葬服务',
+					 '14023@售票点',
+					 '14024@演出票务服务',
+					 '14025@彩票'
+					 
+					 ]
+				 };
+        //        当第一个数组改变时
+        oone.onchange=function(){
+                document.getElementById("two").style.visibility="visible";
+//                清空后三个数组
+                $("#two").children().not(":eq(0)").remove();
+                $("#three").children().not(":eq(0)").remove();
+                //$("#four").children().not(":eq(0)").remove();
+//                循环便利
+                var val=this.value;
+                var arrA = arr2[val];
+                var str1='<option>请选择类目</option>';
+                for(var j=0;j<arrA.length;j++){
+                        var aaa=arrA[j].split('@');
+                        str1+="<option value="+aaa[0]+">"+aaa[1]+"</option>"
+                }
+                otwo.innerHTML=str1;
+                }
+        //        第三个数组        
+        var arr3 = {
+                '202':['2021@',
+					   '2022@川菜',
+					   '2023@湘菜',
+					   '2024@湖北菜',
+					   '2025@台湾菜',
+					   '2026@新疆菜',
+					   '2027@江浙菜',
+					   '2028@云南菜',
+					   '2029@贵州菜',
+					   '20210@西北菜',
+					   '20211@东北菜',
+					   '20212@干锅烤鱼',
+					   '20213@海鲜',
+					   '20214@其他地方菜',
+					   '20215@粤菜',
+					   '20216@湖南菜',
+					   '20217@鲁菜',
+					   '20218@徽菜',
+					   '20219@晋菜',
+					   '20220@豫菜',
+					   '20221@闽菜',
+					   '20222@上海本帮菜',
+					   '20223@淮扬菜'
+					  ],
+				'203':['2031@',
+					   '2032@麻辣烫/串串香',
+					   '2033@川味/重庆火锅',
+					   '2034@云南火锅',
+					   '2035@老北京涮羊肉',
+					   '2036@港式火锅',
+					   '2037@鱼火锅',
+					   '2038@羊蝎子',
+					   '2039@炭火锅',
+					   '20310@韩式火锅',
+					   '20311@豆捞',
+					   '20312@其他火锅'
+					  ],
+				'204':['2041@',
+					   '2042@中式烧烤',
+					   '2043@拉美烧烤',
+					   '2044@日式烧烤',
+					   '2045@铁板烧',
+					   '2046@韩式烧烤',
+					   '2047@其他烧烤'
+					  ],
+				'205':['2051@',
+					   '2052@自助餐',
+					   '2053@创意菜',
+					   '2054@西餐',
+					   '2055@日韩料理',
+					   '2056@东南亚菜',
+					   '2057@素食',
+					   '2058@其他餐饮美食',
+					   '2059@清真菜',
+					   '20510@茶餐厅',
+					   '20511@土菜/农家菜',
+					   '20512@采摘/农家乐'
+					  ],
+			    '206':['2061@',
+					   '2062@粥',
+					   '2063@汤',
+					   '2064@砂锅/煲类/炖菜',
+					   '2065@其他'
+					  ],
+				'207':['2071@',
+					   '2072@西式快餐',
+					   '2073@中式快餐',
+					   '2074@其他快餐'
+					  ],
+				'208':['2081@',
+					   '2082@零食',
+					   '2083@生鲜水果',
+					   '2084@其他休闲产品',
+					   '2085@美食特产' 
+					  ],
+				'209':['2091@',
+					   '2092@熟食',
+					   '2093@面点',
+					   '2094@米线米粉',
+					   '2095@其他小吃'
+					  ],
+				'2010':['2051@',
+					   '2052@咖啡',
+					   '2053@奶茶',
+					   '2054@冰激凌',
+					   '2055@饮品/甜点',
+					   '2056@咖啡厅',
+					   '2057@酒吧'
+					  ],
+                };
+                //        当第二个数组改变时
+        otwo.onchange=function(){
+                //                清空后两个数组
+                $("#three").children().not(":eq(0)").remove();
+                //$("#four").children().not(":eq(0)").remove();
+                document.getElementById("three").style.visibility="visible";
+                //                循环便利
+                var val=this.value;
+                var arrA = arr3[val];
+                var str2='<option>请选择类目</option>';
+                for(var j=0;j<arrA.length;j++){
+                        var aaa=arrA[j].split('@');
+                        str2+="<option value="+aaa[0]+">"+aaa[1]+"</option>"
+                }
+                three.innerHTML=str2;
+                }
+        //        第四个数组        
+       
+//        当第三个数组改变时
+        three.onchange = function(){
+//                清空后最后一个数组
+                //$("#four").children().not(":eq(0)").remove();
+                document.getElementById("four").style.visibility="visible";
+//                循环便利
+                var val=this.value;
+                var str3='<option>请选择类目</option>';
+                for(var l=0;l<arr4[val].length;l++){
+                        str3+="<option >"+arr4[val][l]+"</option>"
+                }
+        four.innerHTML=str3;
+        }
+
+</script>        
+		<div class="row sub-first-nav-2">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-4"><a href="">品类怎么选？</a>查看实际经营在口碑归哪个品类</div>
+		
+		</div>
+		<!--以下是第二行-->
+		<div class="row sub-second">
+			<div class="col-xs-2">品牌</div>
+			<div class="col-xs-3">
+				<input type="text" placeholder="请输入">
+			</div>
+		
+		</div>
+		<div class="row sub-second-2">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-3">
+				不填写将自动归类为“其它品牌”
+			</div>
+		
+		</div>
+	<!--	以下是第三行-->
+		<div class="row sub-third">
+			<div class="col-xs-2"><span>*</span>品牌logo</div>
+			<div class="col-xs-3">
+					
+                        <a href="">
+                            <i class="am-icon-cloud-upload"></i>
+                            <span id="clickUp0">点击上传</span>
+                        </a>
+                   
+				<input type="file">
+				
+			</div>
+			<div class="col-xs-4"><a href="">查看示例</a></div>
+		</div>
+		<div class="row sub-third-2">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-10">
+				大小：不超过10M。格式：bmp, png, jpeg, jpg, gif。建议尺寸在500px*500px以上
+                        
+				
+			</div>
+			
+		</div>
+	<!--第四行-->
+	
+	<div class="row sub-forth">
+			<div class="col-xs-2"><span>*</span>门店名称</div>
+			<div class="col-xs-3">
+				<input type="text" placeholder="例：海底捞">
+			</div>
+			<div class="col-xs-3">
+				<input type="text" placeholder="选填，例：延安店">
+			</div>
+		
+	</div>
+	<!--第五行-->
+	<div class="row sub-three">
+                
+                <div class="col-xs-2 height-34 padding-r-0 width-100">
+                        <span>*</span>门店地址：
+                </div>
+                <div class="col-xs-3 height-34 aggregate-date-store">
+                        <select id="one" class="form-control">
+                                <option></option>
+                        </select>
+                </div>
+                <div class="col-xs-3 height-34 aggregate-date-store">
+                        <select id="two" class="form-control">
+                                <option></option>
+                        </select>
+                </div>  
+                <div class="col-xs-3 height-34 aggregate-date-store">
+                        <select id="three" class="form-control">
+                                <option></option>
+                        </select>
+                </div> 
+        </div>
+</div>
+           <!-- 按钮-->
+           <div class="row sign-btn">
+           	 <div class="col-xs-2"></div>
+       		 <div class="col-xs-2 btn1">
+             <button type="submit" class="btn btn-primary"><a href="sign-up2.html"> 保存并下一步</a> </button>
+             </div>
+       		 <div class="col-xs-2 btn2">
+             <button type="button" class="btn btn-default" data-dismiss="modal" style="width:100px;"><a href="contract-management.html"> 返回</a> </button>
+            </div>
+            <div class="col-xs-4"></div>
+       
+           </div>
+</div>  
+            </td>
+          </tr>
+      </table>
+</div>
+</div>
+</body>
+</html>

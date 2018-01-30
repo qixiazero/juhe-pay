@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{width:100%;}
+.content{width:1000px;background:#fff; margin:auto;}
+.top-text{ 
+width:100%;
+
+margin:auto;
+padding-left:30px;
+border-bottom:1px solid #eee;
+}
+
+
+
+
+.top-text{font-size:18px;
+color:#333;
+line-height:80px;
+height:80px;
+  margin-bottom: 30px;
+}
+.top-title {
+        margin-left: 30px;
+        font-size: 14px;
+        color: #888;
+        border-left: 4px solid #36F;
+        padding-left: 10px;
+}
+.second-title {
+        font-size: 14px;
+        color: #333;
+        margin-left: 85px;
+        line-height: 2;
+}
+.second-content {
+        font-size: 14px;
+        color: #888;
+        line-height: 2;
+        margin: auto 20px;
+}
+.user-number {
+        margin-left: 84px;
+}
+.second-content1 {
+        font-size: 14px;
+        color: #888;
+        line-height: 2;
+        margin-right: 20px;
+        margin-left: -10px;
+}
+.first-main li {
+        margin-left: -10px;
+}
+.second-main li {
+        margin-left: 5px;
+}
+.edit {
+        font-size: 14px;
+        line-height: 2;
+        color: #1188f6;
+}
+/*以上是内容修饰*/
+
+.edit>.btn-primary {
+        color: #1188f6;
+        background-color: #fff;
+        border: hidden;
+}
+.edit>.btn {
+        padding: auto;
+        border: 0px;
+        outline: none;
+        margin-top: -5px;
+        font-size: 14px;
+}
+.edit>.btn-primary:hover {
+        color: #1188f6;
+        background-color: #fff;
+        border: none;
+}
+.edit>.btn:hover, .edit>.btn:focus, .edit> .btn.focus {
+        text-decoration: none;
+        border: hidden;
+}
+.edit>.btn-primary:active, .edit>.btn-primary.active, .edit>.open > .dropdown-toggle.btn-primary {
+        color: #1188f6;
+        background-color: rgba(f, f, f, 0);
+        border-color: none;
+        border: hidden;
+}
+.edit>.btn:active, .edit>.btn.active {
+        background-image: none;
+        outline: 0;
+        -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);
+}
+.edit>.btn-primary:active:hover, .edit>.btn-primary.active:hover, .edit>.open > .dropdown-toggle.btn-primary:hover, .edit>.btn-primary:active:focus, .edit>.btn-primary.active:focus, .edit>.open > .dropdown-toggle.btn-primary:focus, .edit>.btn-primary:active.focus, .edit>.btn-primary.active.focus, .edit>.open > .dropdown-toggle.btn-primary.focus {
+        color: #1188f6;
+        background-color: #fff;
+        border-color: #fff;
+        border: 0px;
+        outline: none;
+}
+.edit>.btn-primary:active, .edit>.btn-primary.active, .edit>.open > .dropdown-toggle.btn-primary {
+        color: #fff;
+        background-color: #fff;
+        border: hidden;
+        border: 0px;
+        outline: none;
+}
+.edit>.btn-primary:focus, .edit>.btn-primary.focus {
+        color: #1188f6;
+        background-color: #fff;
+        border: hidden;
+        border: 0px;
+        outline: none;
+}
+.btn1 {
+        margin-left: 50px;
+}
+.btn2 {
+        margin-left: 35px;
+}
+.btn3 {
+        margin-left: 6px;
+}
+/*以上是编辑按钮的修饰*/
+
+.edit-name>.modal-title {
+        margin: 0;
+        line-height: 1.42857143;
+        text-align: center;
+        color: #333;
+}
+.user-name {
+        margin-top: 30px;
+}
+.user-name label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 0;
+        color: #333;
+}
+.user-name span {
+        color: #333;
+        margin-right: 5px;
+}
+.user-name input {
+        font-family: inherit;
+        font-size: 12px;
+        line-height: 30px;
+        width: 100px;
+        margin-right: 10px;
+        height: 30px;
+}
+.name label {
+        width: 100px;
+        text-align: right;
+}
+.title3 input {
+        font-family: inherit;
+        font-size: 12px;
+        line-height: 30px;
+        width: 213px;
+        margin-right: 10px;
+        height: 30px;
+}
+#btn-psw {
+        background-color: #fff;
+        border: 1px solid;
+}
+#btn-psw1 {
+        background-color: #fff;
+        border: 1px solid;
+}
+#btn-psw2 {
+        background-color: #fff;
+        border: 1px solid;
+}
+#btn-psw3 {
+        background-color: #fff;
+        border: 1px solid;
+}
+.middle>.modal-body {
+        margin-bottom: 30px;
+        margin-left: 50px;
+        margin-top: 50px;
+}
+.foot>.modal-footer {
+        border-top: 1px solid #fff;
+        margin: auto;
+        text-align: center;
+}
+.foot>.modal-footer>button {
+        width: 100px;
+        background: #1188f6;
+        border: 1px solid #1188f6;
+}
+.foot>.madal-footer>.cancel>button {
+        background: #fff;
+        border: 1px solid #666;
+}
+.forget-psw {
+        font-size: 16px;
+        color: #1188f6;
+}
+.user-name>a {
+        color: #1188f6;
+        text-decoration: none;
+}
+.user-name>a:hover, .user-name>a:focus {
+        color: #1188f6;
+        text-decoration: none;
+}
+/*以上是模态框的修饰*/
+
+.title-2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+}
+ td{vertical-align:top;}
