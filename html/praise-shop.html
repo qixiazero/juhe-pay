@@ -50,7 +50,7 @@ body {
 	line-height: 1.5;
 }
 .nav-pills > li > a {
-	border-radius: 0px;
+	border-radius: 0;
 	padding-left: 20px;
 	color: #333;
 }
@@ -67,7 +67,7 @@ element.style {
 	padding-left: 45px;
 }
 p {
-	margin: 0px 0 5px;
+	margin: 0 0 5px;
 	font-size: 16px;
 	color: #888;
 	border-top: 1px solid #eee;
@@ -77,7 +77,7 @@ td, th {
 	padding: 0;
 	border-right: 1px solid #eee;
 }
-.header1 p{padding-top:0px;}
+.header1 p{padding-top:0;}
 .photo p{
 	border:hidden;
 	}
@@ -145,7 +145,7 @@ td, th {
               <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="数据中心"title="数据中心"></div>
               <p>数据中心</p>
               <ul class="nav nav-pills nav-stacked ">
-                <li role="presentation" id="li3" onclick="aaa('li3')"><a href="transaction.html" target="main">交易分析</a></li>
+                <li role="presentation" id="li13" onclick="aaa('li3')"><a href="transaction.html" target="main">交易分析</a></li>
               </ul>
               <div class="pull-left"> <img src="../img/account-icon@2x.png"width="18"alt="信息中心"title="信息中心"></div>
               <p>信息中心</p>
@@ -201,17 +201,17 @@ td, th {
                 </div>
                 <div class="col-xs-3 height-34 aggregate-date-store">
                         <select id="one" class="form-control">
-                                <option></option>
+                                <option>请选择类目</option>
                         </select>
                 </div>
                 <div class="col-xs-3 height-34 aggregate-date-store">
                         <select id="two" class="form-control">
-                                <option></option>
+                                <option>请选择类目</option>
                         </select>
                 </div>  
                 <div class="col-xs-3 height-34 aggregate-date-store">
                         <select id="three" class="form-control">
-                                <option></option>
+                                <option> 请选择类目</option>
                         </select>
                 </div> 
         </div>
@@ -223,10 +223,10 @@ td, th {
         var oone=document.getElementById("one");
         var otwo=document.getElementById("two");
         var three=document.getElementById("three");
-        //var four=document.getElementById("four");
+      
         document.getElementById("two").style.visibility="hidden";
         document.getElementById("three").style.visibility="hidden";
-        //document.getElementById("four").style.visibility="hidden";
+       
         var str='';
         //        第一个数组
         var arr1=[{"id":"1","value":"请选择类目"},
@@ -258,7 +258,7 @@ td, th {
                 str+="<option value="+arr1[i].id+">"+arr1[i].value+"</option>"
         }
         oone.innerHTML=str;
-        //        第一个数组
+        //        第二个数组
         var arr2 = {
                 '1':['101@'],
                 '2':[
@@ -507,11 +507,10 @@ td, th {
         //        当第一个数组改变时
         oone.onchange=function(){
                 document.getElementById("two").style.visibility="visible";
-//                清空后三个数组
+//                清空后两个数组
                 $("#two").children().not(":eq(0)").remove();
                 $("#three").children().not(":eq(0)").remove();
-                //$("#four").children().not(":eq(0)").remove();
-//                循环便利
+               
                 var val=this.value;
                 var arrA = arr2[val];
                 var str1='<option>请选择类目</option>';
@@ -617,7 +616,7 @@ td, th {
         otwo.onchange=function(){
                 //                清空后两个数组
                 $("#three").children().not(":eq(0)").remove();
-                //$("#four").children().not(":eq(0)").remove();
+                
                 document.getElementById("three").style.visibility="visible";
                 //                循环便利
                 var val=this.value;
@@ -629,22 +628,7 @@ td, th {
                 }
                 three.innerHTML=str2;
                 }
-        //        第四个数组        
        
-//        当第三个数组改变时
-        three.onchange = function(){
-//                清空后最后一个数组
-                //$("#four").children().not(":eq(0)").remove();
-                document.getElementById("four").style.visibility="visible";
-//                循环便利
-                var val=this.value;
-                var str3='<option>请选择类目</option>';
-                for(var l=0;l<arr4[val].length;l++){
-                        str3+="<option >"+arr4[val][l]+"</option>"
-                }
-        four.innerHTML=str3;
-        }
-
 </script>        
 		<div class="row sub-first-nav-2">
 			<div class="col-xs-2"></div>
@@ -709,21 +693,95 @@ td, th {
                         <span>*</span>门店地址：
                 </div>
                 <div class="col-xs-3 height-34 aggregate-date-store">
-                        <select id="one" class="form-control">
+                        <select id="one1" class="form-control">
                                 <option></option>
                         </select>
                 </div>
                 <div class="col-xs-3 height-34 aggregate-date-store">
-                        <select id="two" class="form-control">
+                        <select id="two1" class="form-control">
                                 <option></option>
                         </select>
                 </div>  
                 <div class="col-xs-3 height-34 aggregate-date-store">
-                        <select id="three" class="form-control">
+                        <select id="three1" class="form-control">
                                 <option></option>
                         </select>
                 </div> 
-        </div>
+      </div>
+	  <script type="text/javascript">
+        var oone=document.getElementById("one1");
+        var otwo=document.getElementById("two1");
+        var three=document.getElementById("three1");
+        //var four=document.getElementById("four");
+        var str='';
+        //        第一个数组
+        var arr1=[{"id":"01","value":"请选择省"},
+				  {"id":"02","value":"安徽"},
+				  {"id":"03","value":"北京"},
+				  {"id":"04","value":"重庆"},
+				  {"id":"05","value":"福建"}];
+        //        循环便利数组
+        for(var i=0;i<arr1.length;i++){
+                str+="<option value="+arr1[i].id+">"+arr1[i].value+"</option>"
+        }
+        oone.innerHTML=str;
+        //        第二个数组
+        var arr2 = {
+                '01':['0101@请选择市'],
+                '02':['0201@亳州市',
+					 '0202@安庆市'	
+					],
+                '03':['0301@请选择市',
+					  '0302@北京郊县',
+					  '0303@北京市'
+					],
+                '04':['0401@请选择市',
+					 '0402@重庆郊县',
+					 '0403@重庆市'
+					
+					],
+                '05':['0501@请选择市','0502@福州市','0503@龙岩市']  };
+        //        当第一个数组改变时
+        oone.onchange=function(){
+//                清空后三个数组
+                $("#two1").children().not(":eq(0)").remove();
+                $("#three1").children().not(":eq(0)").remove();
+                //$("#four1").children().not(":eq(0)").remove();
+//                循环便利
+                var val=this.value;
+                var arrA = arr2[val];
+                var str1='<option>全部</option>';
+                for(var j=0;j<arrA.length;j++){
+                        var aaa=arrA[j].split('@');
+                        str1+="<option value="+aaa[0]+">"+aaa[1]+"</option>"
+                }
+                otwo.innerHTML=str1;
+                }
+        //        第三个数组        
+        var arr3 = {
+               
+                '0201':['02011@上海'],
+                '0301':['03011@重庆'],
+                '0401':['04011@天津'],
+                '0501':['05011@济南','05021@青岛']  };
+                //        当第二个数组改变时
+        otwo.onchange=function(){
+                //                清空后两个数组
+                $("#three1").children().not(":eq(0)").remove();
+                //$("#four").children().not(":eq(0)").remove();
+                //                循环便利
+                var val=this.value;
+                var arrA = arr3[val];
+                var str2='<option>全部</option>';
+                for(var j=0;j<arrA.length;j++){
+                        var aaa=arrA[j].split('@');
+                        str2+="<option value="+aaa[0]+">"+aaa[1]+"</option>"
+                }
+                three.innerHTML=str2;
+                }
+       
+
+</script>        
 </div>
            <!-- 按钮-->
            <div class="row sign-btn">
@@ -737,7 +795,7 @@ td, th {
             <div class="col-xs-4"></div>
        
            </div>
-</div>  
+
             </td>
           </tr>
       </table>
