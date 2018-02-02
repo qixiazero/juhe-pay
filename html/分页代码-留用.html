@@ -56,7 +56,7 @@ height: 28px;
 <body>
 <div class="container-fluid">
         <nav>
-                <ul class="pagination" id="pag-result"></ul>
+                <ul class="pagination" id="pag-result" onClick="gotoPage()"></ul>
         </nav>
 </div>
 <script>
@@ -64,6 +64,10 @@ height: 28px;
 var $thisPageNumber, thisShowMinNumber, $prePage, $nextPage, $firstPage, $lastPage;
 var totalPageNum = 5;
 CreatePagNav(totalPageNum);
+        
+        function gotoPage(){
+                alert(111);
+        }
 function CreatePagNav(totalPageNum) { //totalPageNum：总页数
         var $pagResult = $("#pag-result");
         var initStr = [];
