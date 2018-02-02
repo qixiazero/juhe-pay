@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+.title>.col-xs-12{font-size:18px; padding: 0 20px;
+  border-bottom: 1px solid #eee;
+  color:#666; height:50px; line-height:50px;}
+
+.title1 span{color:red;}
+td{vertical-align:middle !important;
+text-align:center; font-size:16px;}
+th{vertical-align:middle !important;
+text-align:center; font-size:16px; font-weight:bold;
+background:#eee;}
+
+
+
+
+.title1{margin-top:20px;
+margin-bottom:20px;}
+
+.table-bordered{border-color:#666 !important;}
+ .table-bordered > tbody > tr > td{
+  border: 1px solid #666 !important;
+}
+.table-bordered > thead > tr > th{
+  border: 1px solid #666 !important;
+}
+.list1 span{font-weight:600;}

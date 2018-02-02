@@ -18,8 +18,9 @@ a {
 .clear {
  *zoom: 1;
 }
-#body {
+body {
 	width: 100%;
+	font-family: "Microsoft YaHei" !important;
 }
 .header1 {
 	width: 100%;
@@ -98,3 +99,4 @@ table > tbody > tr > td p {
         padding-left: 60px!important;
         margin-top: 25px!important;
 }
+ td{vertical-align:top;}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新增普通门店</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+
+<link rel="stylesheet" type="text/css" href="../css/general-shop.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+ 
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+	function aaa(data) {
+		var list = document.getElementsByTagName("li");
+		for(var i=0;i<list.length;i++){
+			list[i].className = '';
+		}
+		document.getElementById(data).className='active';		
+	}
+</script>
+
+  
+</head>
+
+<body>
+<div class="container">
+	 <!-- 以下是口碑开店的标题-->
+        <div class="top-text">
+        	新增普通门店
+        </div>
+      
+       <!--以下是主要信息-->
+<div class="addStoreInformation">
+	   <div class="am-g-t">
+                    <div class="am-u-sm-3 am-u-sm-offset-1 am-u-end info">
+                       
+                         基本信息
+                      
+                    </div>
+        </div>
+		<!--以下是第一行-->
+		<div class="row sub-forth">
+			<div class="col-xs-2"><span>*</span>门店名称:</div>
+			<div class="col-xs-3">
+				<input type="text" placeholder="主门店名称，例：海底捞" required>
+			</div>
+			<div class="col-xs-3">
+				<input type="text" placeholder="分店名（选填），例：延安店">
+			</div>
+		
+	</div>
+		<!--门店地址-->
+<div class="row addres">
+	<div class="col-xs-2"><span>*</span>门店地址:</div>
+	<div class="col-xs-5">
+		<form class="bs-example bs-example-form" role="form">
+		
+			
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="选择省市区" required>
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+							<span>地图定位</span>
+						</button>
+					</span>
+				</div><!-- /input-group -->
+	</form>
+	</div>
+
+</div>
+
+<div class="row addres-4">
+	<div class="col-xs-2"></div>
+	<div class="col-xs-10"><input type="text" placeholder="请输入详细地址，如：延安路88号"></div>
+</div>
+
+<div class="row addres-2">
+	<div class="col-xs-2"></div>
+	<div class="col-xs-10"><a href="address-example.html" target="_blank">正确的地址示例</a> 地址如有偏差可点击地图进行手动定位</div>
+</div>
+
+<div class="row addres-3">
+	<div class="col-xs-2"></div>
+	<div class="col-xs-8"><img src="../img/map.jpg" width="360" height="200"></div>
+</div>
+		
+<div class="row addres-4">
+	<div class="col-xs-2"></div>
+	<div class="col-xs-8"><input type="text" placeholder="备注地址，例地铁口左边"></div>
+</div>		
+		
+<!--电话-->		
+<div class="row tel">
+	<div class="col-xs-2">门店电话</div>
+	<div class="col-xs-8"><input type="text" placeholder="固话与手机均可"></div>
+</div>				
+<!--备注-->		
+<div class="row remark">
+	<div class="col-xs-2">备注</div>
+	<div class="col-xs-8"><input type="text" placeholder="填写备注"></div>
+</div>		
+  
+  <div class="row remark1">
+	<div class="col-xs-2"></div>
+	<div class="col-xs-8">限30个字</div>
+</div>
+
+<!-- 按钮-->
+           <div class="row sign-btn">
+           	 <div class="col-xs-2"></div>
+       		 <div class="col-xs-2 btn1">
+             <button type="submit" class="btn btn-primary"><a href="#"> 保存</a> </button>
+             </div>
+       		 <div class="col-xs-2 btn2">
+             <button type="button" class="btn btn-default" data-dismiss="modal" style="width:100px;"><a href="my-store.html"> 返回</a> </button>
+            </div>
+            <div class="col-xs-4"></div>
+       
+           </div>       
+</div>
+</div>
+</body>
+</html>
