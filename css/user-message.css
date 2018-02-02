@@ -2,6 +2,8 @@
 /* CSS Document */
 .wrap {
         width: 100%;
+        min-height: 1150px;
+        background: #fff;
 }
 .content {
         width: 1000px;

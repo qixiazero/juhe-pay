@@ -25,12 +25,12 @@ body {
 .header1 {
 	width: 100%;
 	background: #333;
-	margin: 0, auto;
 }
 .header1 p {
 	color: #fff;
 	font-size: 16px;
-	line-height: 3;
+        height: 40px;
+	line-height: 40px;
 	margin: auto;
 	width: 1200px;
 	text-align: right;
@@ -38,7 +38,6 @@ body {
 .header2 {
 	width: 1200px;
 	margin: auto;
-	line-height:200px;
 }
 .header2 span {
 	color: #333;
@@ -55,7 +54,7 @@ body {
 .top-line-r{margin:auto 10px;}
 /*以上是头部修饰*/
 .main-content{width:100%;background: #eee;}
-.content{background-color:#fff;width:1200px; margin:auto; border-top:20px solid #eee;border-bottom: 40px solid #eee;}
+.content{background-color:#fff;width:1200px; margin:auto;}
 .vertical-align-t {
         vertical-align: top;
 }
@@ -66,10 +65,38 @@ body {
             padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    padding-bottom: 30px;
     border-bottom: 1px solid #eee;
+        padding-bottom: 15px;
 }
-.padding-top-15 {
-        padding-top: 15px!important;
+.nav-pills > li > a {
+	border-radius: 0px!important;
+	padding-left: 20px;
+	color: #333;
+}
+.pull-left img {
+	margin-left: 25px;
+        margin-top: 25px;
+}
+
+element.style {
+	padding-left: 45px;
+}
+.nav-stacked li a {
+	padding-left: 60px!important;
+        font-size: 14px;
+}
+p {
+	margin: 0px 0 10px;
+	font-size: 14px;
+	color: #888;
+}
+td, th {
+	padding: 0;
+	border-right: 1px solid #eee;
+}
+.header1 p{padding-top:0px;}
+table > tbody > tr > td p {
+        padding-left: 60px!important;
+        margin-top: 25px!important;
 }
  td{vertical-align:top;}

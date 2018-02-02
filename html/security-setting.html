@@ -13,363 +13,362 @@
 <body>
 <div class="wrap">
     <div class="content">
-        <div class="top-text">
-        	<span>安全设置</span>
-        </div>
-        <div class="user-message">
-            <ul>
-                <li> <span class="top-title">账号基本信息</span>
-                    <ul class="first-main">
-                        <li> 
-                            <span class="second-title user-number">商户号/账号</span>
-                            <span class="second-content">H39305510000001</span>							
-                        </li>
-                        <li >
-                        <span class="second-title ">登录手机号</span>
-                        <span class="second-content">180*****535</span>
-                        <span class="edit">		
-                        <button class="btn btn-primary btn-lg btn1" 
-                        data-toggle="modal" data-target="#myModal1">修改</button>
-                       </span>
-                       </li>    
-                    </ul>
-                </li>
-           
-            </ul>
-            <!-- 以上是账号基本信息结构 -->
-            <ul class="title-2">
-                <li> <span class="top-title">账号安全设置</span>
-                    <ul class="second-main">
-                        <li> 
-                            <span class="second-title user-number">登录密码</span>
-                            <span class="second-content">用于登录时使用</span>
-                            <span class="edit">		
-                        <button class="btn btn-primary btn-lg btn2" 
-                        data-toggle="modal" data-target="#myModal2">重置</button>
-                            </span>							
-                        </li>
-                        <li>
-                        <span class="second-title ">操作密码</span>
-                        <span class="second-content">用于重要操作时使用</span>
-                        <span class="edit">		
-                        <button class="btn btn-primary btn-lg btn3" 
-                        data-toggle="modal" data-target="#myModal3">重置</button>
-                       </span>
-                       </li>    
-                    </ul>
-                </li> 
-            </ul>
-            <!--以上是账号安全设置-->
-            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" 
-                            aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="edit-name modal-header">
-                                           <button type="button" class="close" data-dismiss="modal" 
-                                           aria-hidden="true"> &times; </button>
-                                            <h4 class="modal-title" id="myModalLabel"> 
-                                            修改绑定手机号 
-                                            </h4>
-                                        </div>
-                                        <!--以上是模态框头部内容-->
-                                        <div class="middle">
-                                            <div class="modal-body">
-                                                <p class="user-name title1 "> 
-                                                    <span class="name"><label for="user">原手机号：</label></span>
-                                                    <span>180*****535</span>
-                                                </p>
-                                                <p class="user-name title2">
-                                                    <span class="name"><label for="psw">短信验证码：</label></span>
-                                                    <input type="text" name="text" id="text1" 
-                                                    value="" placeholder="请输入短信验证码" 
-                                                    required   
-                                                    <span>
-                                                    	<a href="#btn-psw"> 
-                                                    	<input type="button" id="btn-psw" 
-                                                        value="获取短信验证码"/> 
-<script type="text/javascript">  
-var wait=60;  
-function time(o) {  
-        if (wait == 0) {  
-            o.removeAttribute("disabled");            
-            o.value="获取短信验证码";  
-            wait = 60;  
-        } else {  
-            o.setAttribute("disabled", true);  
-            o.value="重新发送(" + wait + ")";  
-            wait--;  
-            setTimeout(function() {  
-                time(o)  
-            },  
-            1000)  
-        }  
-    }  
-document.getElementById("btn-psw").onclick=function(){time(this);}  
-</script>   
-                                                        </a>
-                                                    </span>
-                                                </p>
-                                                <p class="user-name title3">
-                                                    <span class="name"><label for="psw">新手机号：</label></span>
-                                                    <input type="text" name="text" id="text1" 
-                                                    value="" placeholder="请输入新手机号" 
-                                                    required>
-                                                 </p>
-                                                 <p class="user-name title4">
-                                                    <span class="name"><label for="psw">短信验证码：</label></span>
-                                                    <input type="text" name="text" id="text1" 
-                                                    value="" placeholder="请输入短信验证码" 
-                                                    required   
-                                                    <span>
-                                                    	<a href="#btn-psw"> 
-                                                    	<input type="button" id="btn-psw1" 
-                                                        value="获取短信验证码"/>
- <script type="text/javascript">  
-var wait=60;  
-function time(o) {  
-        if (wait == 0) {  
-            o.removeAttribute("disabled");            
-            o.value="获取短信验证码";  
-            wait = 60;  
-        } else {  
-            o.setAttribute("disabled", true);  
-            o.value="重新发送(" + wait + ")";  
-            wait--;  
-            setTimeout(function() {  
-                time(o)  
-            },  
-            1000)  
-        }  
-    }  
-document.getElementById("btn-psw1").onclick=function(){time(this);}  
-</script>   
-                                                        </a>
-                                                    </span>
-                                                </p> 
-                                            </div>
-                                        </div>
-                                        <!--以上是模态框中间内容-->
-                                        <div class="foot">
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary"> 确定 </button>
-                                                <span class="cancel">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" style="width:100px;">取消 </button>
-                                                </span>
-                                             </div>
-                                        </div>
-                                        <!--以上是模态框底部按钮-->
-                                    </div>
-                                    <!-- /.modal-content --> 
-                                </div>
-                                <!-- /.modal --> 
-                            </div>  
-          <!--  以上是修改模态框结构-->
-          
-          
-           <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" 
-                            aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="edit-name modal-header">
-                                           <button type="button" class="close" data-dismiss="modal" 
-                                           aria-hidden="true"> &times; </button>
-                                            <h4 class="modal-title" id="myModalLabel"> 
-                                            重置登录密码 
-                                            </h4>
-                                        </div>
-                                        <!--以上是模态框头部内容-->
-                                        <div class="middle">
-                                            <div class="modal-body">
-                                                <p class="user-name title1 "> 
-                                                    <span class="name"><label for="user">手机
-                                                    号：</label>
-                                                    </span>
-                                                    <span>180*****535</span>
-                                                </p>
-                                                <p class="user-name title4">
-                                                   <span class="name"> <label for="psw">短信验
-                                                 证码：</label>
-                                                   </span>
-                                                    <input type="text" name="text" id="text1" 
-                                                    value="" placeholder="请输入短信验证码" 
-                                                    required   
-                                                    <span>
-                                                    	<a href="#btn-psw"> 
-                                                    	<input type="button" id="btn-psw2" 
-                                                        value="获取短信验证码"/>
-                                                          
-<script type="text/javascript">  
-var wait=60;  
-function time(o) {  
-        if (wait == 0) {  
-            o.removeAttribute("disabled");            
-            o.value="获取短信验证码";  
-            wait = 60;  
-        } else {  
-            o.setAttribute("disabled", true);  
-            o.value="重新发送(" + wait + ")";  
-            wait--;  
-            setTimeout(function() {  
-                time(o)  
-            },  
-            1000)  
-        }  
-    }  
-document.getElementById("btn-psw2").onclick=function(){time(this);}  
-</script>  
+            <div>
+                    <div class="top-text">
+                                <span>安全设置</span>
+                        </div>
+                        <div class="user-message">
+                            <ul>
+                                <li> <span class="top-title">账号基本信息</span>
+                                    <ul class="first-main">
+                                        <li> 
+                                            <span class="second-title user-number">商户号/账号</span>
+                                            <span class="second-content">H39305510000001</span>							
+                                        </li>
+                                        <li >
+                                        <span class="second-title ">登录手机号</span>
+                                        <span class="second-content">180*****535</span>
+                                        <span class="edit">		
+                                        <button class="btn btn-primary btn-lg btn1" 
+                                        data-toggle="modal" data-target="#myModal1">修改</button>
+                                       </span>
+                                       </li>    
+                                    </ul>
+                                </li>
 
-                                                        </a>
-                                                    </span>
-                                                </p> 
-                                                <p class="user-name title3">
-                                                    <span class="name"><label for="psw">原密码
-                                                    ：</label>
-                                                    </span>
-                                                    <input type="text" name="text" id="text1" 
-                                                    value="" placeholder="请输入原密码" 
-                                                    required>
-                                                 </p>
-                                                 <p class="user-name title3">
-                                                    <span class="name"><label for="psw">新密码
-                                                    ：</label></span>
-                                                    <input type="text" name="text" id="text1" 
-                                                    value="" placeholder="6~20位字符，区分大小写" 
-                                                    required>
-                                                 </p>
-                                                 <p class="user-name title3">
-                                                    <span class="name"><label for="psw">再次确
-                                                    认：</label></span>
-                                                    <input type="text" name="text" id="text1" 
-                                                    value="" placeholder="" 
-                                                    required>
-                                                 </p>
-                                                 
-                                                 
-                                                 
-                                              
-                                            </div>
-                                        </div>
-                                        <!--以上是模态框中间内容-->
-                                        <div class="foot">
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary"> 确定 </button>
-                                                <span class="cancel">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" style="width:100px;">取消 </button>
-                                                </span>
-                                             </div>
-                                        </div>
-                                        <!--以上是模态框底部按钮-->
-                                    </div>
-                                    <!-- /.modal-content --> 
-                                </div>
-                                <!-- /.modal --> 
-                            </div>  
-          <!--  以上是重置1模态框结构-->
-          
-          
-          <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" 
-                            aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="edit-name modal-header">
-                                           <button type="button" class="close" data-dismiss="modal" 
-                                           aria-hidden="true"> &times; </button>
-                                            <h4 class="modal-title" id="myModalLabel"> 
-                                            重置操作密码 
-                                            </h4>
-                                        </div>
-                                        <!--以上是模态框头部内容-->
-                                        <div class="middle">
-                                            <div class="modal-body">
-                                                <p class="user-name title1 "> 
-                                                    <span class="name"><label for="user">手机
-                                                    号：</label>
-                                                    </span>
-                                                    <span>180*****535</span>
-                                                </p>
-                                                <p class="user-name title4">
-                                                   <span class="name"> <label for="psw">短信验
-                                                 证码：</label>
-                                                   </span>
-                                                    <input type="text" name="text" id="text1" 
-                                                    value="" placeholder="请输入短信验证码" 
-                                                    required   
-                                                    <span>
-                                                    	<a href="#btn-psw"> 
-                                                    	<input type="button" id="btn-psw3" 
-                                                        value="获取短信验证码"/>
-                                                          
-<script type="text/javascript">  
-var wait=60;  
-function time(o) {  
-        if (wait == 0) {  
-            o.removeAttribute("disabled");            
-            o.value="获取短信验证码";  
-            wait = 60;  
-        } else {  
-            o.setAttribute("disabled", true);  
-            o.value="重新发送(" + wait + ")";  
-            wait--;  
-            setTimeout(function() {  
-                time(o)  
-            },  
-            1000)  
-        }  
-    }  
-document.getElementById("btn-psw3").onclick=function(){time(this);}  
-</script>  
+                            </ul>
+                            <!-- 以上是账号基本信息结构 -->
+                            <ul class="title-2">
+                                <li> <span class="top-title">账号安全设置</span>
+                                    <ul class="second-main">
+                                        <li> 
+                                            <span class="second-title user-number">登录密码</span>
+                                            <span class="second-content">用于登录时使用</span>
+                                            <span class="edit">		
+                                        <button class="btn btn-primary btn-lg btn2" 
+                                        data-toggle="modal" data-target="#myModal2">重置</button>
+                                            </span>							
+                                        </li>
+                                        <li>
+                                        <span class="second-title ">操作密码</span>
+                                        <span class="second-content">用于重要操作时使用</span>
+                                        <span class="edit">		
+                                        <button class="btn btn-primary btn-lg btn3" 
+                                        data-toggle="modal" data-target="#myModal3">重置</button>
+                                       </span>
+                                       </li>    
+                                    </ul>
+                                </li> 
+                            </ul>
+                            <!--以上是账号安全设置-->
+                            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" 
+                                            aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="edit-name modal-header">
+                                                           <button type="button" class="close" data-dismiss="modal" 
+                                                           aria-hidden="true"> &times; </button>
+                                                            <h4 class="modal-title" id="myModalLabel"> 
+                                                            修改绑定手机号 
+                                                            </h4>
+                                                        </div>
+                                                        <!--以上是模态框头部内容-->
+                                                        <div class="middle">
+                                                            <div class="modal-body">
+                                                                <p class="user-name title1 "> 
+                                                                    <span class="name"><label for="user">原手机号：</label></span>
+                                                                    <span>180*****535</span>
+                                                                </p>
+                                                                <p class="user-name title2">
+                                                                    <span class="name"><label for="psw">短信验证码：</label></span>
+                                                                    <input type="text" name="text" id="text1" 
+                                                                    value="" placeholder="请输入短信验证码" 
+                                                                    required   
+                                                                    <span>
+                                                                        <a href="#btn-psw"> 
+                                                                        <input type="button" id="btn-psw" 
+                                                                        value="获取短信验证码"/> 
+                <script type="text/javascript">  
+                var wait=60;  
+                function time(o) {  
+                        if (wait == 0) {  
+                            o.removeAttribute("disabled");            
+                            o.value="获取短信验证码";  
+                            wait = 60;  
+                        } else {  
+                            o.setAttribute("disabled", true);  
+                            o.value="重新发送(" + wait + ")";  
+                            wait--;  
+                            setTimeout(function() {  
+                                time(o)  
+                            },  
+                            1000)  
+                        }  
+                    }  
+                document.getElementById("btn-psw").onclick=function(){time(this);}  
+                </script>   
+                                                                        </a>
+                                                                    </span>
+                                                                </p>
+                                                                <p class="user-name title3">
+                                                                    <span class="name"><label for="psw">新手机号：</label></span>
+                                                                    <input type="text" name="text" id="text1" 
+                                                                    value="" placeholder="请输入新手机号" 
+                                                                    required>
+                                                                 </p>
+                                                                 <p class="user-name title4">
+                                                                    <span class="name"><label for="psw">短信验证码：</label></span>
+                                                                    <input type="text" name="text" id="text1" 
+                                                                    value="" placeholder="请输入短信验证码" 
+                                                                    required   
+                                                                    <span>
+                                                                        <a href="#btn-psw"> 
+                                                                        <input type="button" id="btn-psw1" 
+                                                                        value="获取短信验证码"/>
+                 <script type="text/javascript">  
+                var wait=60;  
+                function time(o) {  
+                        if (wait == 0) {  
+                            o.removeAttribute("disabled");            
+                            o.value="获取短信验证码";  
+                            wait = 60;  
+                        } else {  
+                            o.setAttribute("disabled", true);  
+                            o.value="重新发送(" + wait + ")";  
+                            wait--;  
+                            setTimeout(function() {  
+                                time(o)  
+                            },  
+                            1000)  
+                        }  
+                    }  
+                document.getElementById("btn-psw1").onclick=function(){time(this);}  
+                </script>   
+                                                                        </a>
+                                                                    </span>
+                                                                </p> 
+                                                            </div>
+                                                        </div>
+                                                        <!--以上是模态框中间内容-->
+                                                        <div class="foot">
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"> 确定 </button>
+                                                                <span class="cancel">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal" style="width:100px;">取消 </button>
+                                                                </span>
+                                                             </div>
+                                                        </div>
+                                                        <!--以上是模态框底部按钮-->
+                                                    </div>
+                                                    <!-- /.modal-content --> 
+                                                </div>
+                                                <!-- /.modal --> 
+                                            </div>  
+                          <!--  以上是修改模态框结构-->
 
-                                                        </a>
-                                                    </span>
-                                                </p> 
-                                                
-                                                 <p class="user-name title3">
-                                                    <span class="name"><label for="psw">新密码
-                                                    ：</label></span>
-                                                    <input type="text" name="text" id="text1" 
-                                                    value="" placeholder="6位纯数字" 
-                                                    required>
-                                                 </p>
-                                                 <p class="user-name title3">
-                                                    <span class="name"><label for="psw">再次确
-                                                    认：</label></span>
-                                                    <input type="text" name="text" id="text1" 
-                                                    value="" placeholder="" 
-                                                    required>
-                                                 </p>
-                                                 
-                                                 
-                                                 
-                                              
-                                            </div>
-                                        </div>
-                                        <!--以上是模态框中间内容-->
-                                        <div class="foot">
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary"> 确定 </button>
-                                                <span class="cancel">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal" style="width:100px;">取消 </button>
-                                                </span>
-                                             </div>
-                                        </div>
-                                        <!--以上是模态框底部按钮-->
-                                    </div>
-                                    <!-- /.modal-content --> 
+
+                           <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" 
+                                            aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="edit-name modal-header">
+                                                           <button type="button" class="close" data-dismiss="modal" 
+                                                           aria-hidden="true"> &times; </button>
+                                                            <h4 class="modal-title" id="myModalLabel"> 
+                                                            重置登录密码 
+                                                            </h4>
+                                                        </div>
+                                                        <!--以上是模态框头部内容-->
+                                                        <div class="middle">
+                                                            <div class="modal-body">
+                                                                <p class="user-name title1 "> 
+                                                                    <span class="name"><label for="user">手机
+                                                                    号：</label>
+                                                                    </span>
+                                                                    <span>180*****535</span>
+                                                                </p>
+                                                                <p class="user-name title4">
+                                                                   <span class="name"> <label for="psw">短信验
+                                                                 证码：</label>
+                                                                   </span>
+                                                                    <input type="text" name="text" id="text1" 
+                                                                    value="" placeholder="请输入短信验证码" 
+                                                                    required   
+                                                                    <span>
+                                                                        <a href="#btn-psw"> 
+                                                                        <input type="button" id="btn-psw2" 
+                                                                        value="获取短信验证码"/>
+
+                <script type="text/javascript">  
+                var wait=60;  
+                function time(o) {  
+                        if (wait == 0) {  
+                            o.removeAttribute("disabled");            
+                            o.value="获取短信验证码";  
+                            wait = 60;  
+                        } else {  
+                            o.setAttribute("disabled", true);  
+                            o.value="重新发送(" + wait + ")";  
+                            wait--;  
+                            setTimeout(function() {  
+                                time(o)  
+                            },  
+                            1000)  
+                        }  
+                    }  
+                document.getElementById("btn-psw2").onclick=function(){time(this);}  
+                </script>  
+
+                                                                        </a>
+                                                                    </span>
+                                                                </p> 
+                                                                <p class="user-name title3">
+                                                                    <span class="name"><label for="psw">原密码
+                                                                    ：</label>
+                                                                    </span>
+                                                                    <input type="text" name="text" id="text1" 
+                                                                    value="" placeholder="请输入原密码" 
+                                                                    required>
+                                                                 </p>
+                                                                 <p class="user-name title3">
+                                                                    <span class="name"><label for="psw">新密码
+                                                                    ：</label></span>
+                                                                    <input type="text" name="text" id="text1" 
+                                                                    value="" placeholder="6~20位字符，区分大小写" 
+                                                                    required>
+                                                                 </p>
+                                                                 <p class="user-name title3">
+                                                                    <span class="name"><label for="psw">再次确
+                                                                    认：</label></span>
+                                                                    <input type="text" name="text" id="text1" 
+                                                                    value="" placeholder="" 
+                                                                    required>
+                                                                 </p>
+
+
+
+
+                                                            </div>
+                                                        </div>
+                                                        <!--以上是模态框中间内容-->
+                                                        <div class="foot">
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"> 确定 </button>
+                                                                <span class="cancel">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal" style="width:100px;">取消 </button>
+                                                                </span>
+                                                             </div>
+                                                        </div>
+                                                        <!--以上是模态框底部按钮-->
+                                                    </div>
+                                                    <!-- /.modal-content --> 
+                                                </div>
+                                                <!-- /.modal --> 
+                                            </div>  
+                          <!--  以上是重置1模态框结构-->
+
+
+                          <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" 
+                                            aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="edit-name modal-header">
+                                                           <button type="button" class="close" data-dismiss="modal" 
+                                                           aria-hidden="true"> &times; </button>
+                                                            <h4 class="modal-title" id="myModalLabel"> 
+                                                            重置操作密码 
+                                                            </h4>
+                                                        </div>
+                                                        <!--以上是模态框头部内容-->
+                                                        <div class="middle">
+                                                            <div class="modal-body">
+                                                                <p class="user-name title1 "> 
+                                                                    <span class="name"><label for="user">手机
+                                                                    号：</label>
+                                                                    </span>
+                                                                    <span>180*****535</span>
+                                                                </p>
+                                                                <p class="user-name title4">
+                                                                   <span class="name"> <label for="psw">短信验
+                                                                 证码：</label>
+                                                                   </span>
+                                                                    <input type="text" name="text" id="text1" 
+                                                                    value="" placeholder="请输入短信验证码" 
+                                                                    required   
+                                                                    <span>
+                                                                        <a href="#btn-psw"> 
+                                                                        <input type="button" id="btn-psw3" 
+                                                                        value="获取短信验证码"/>
+
+                <script type="text/javascript">  
+                var wait=60;  
+                function time(o) {  
+                        if (wait == 0) {  
+                            o.removeAttribute("disabled");            
+                            o.value="获取短信验证码";  
+                            wait = 60;  
+                        } else {  
+                            o.setAttribute("disabled", true);  
+                            o.value="重新发送(" + wait + ")";  
+                            wait--;  
+                            setTimeout(function() {  
+                                time(o)  
+                            },  
+                            1000)  
+                        }  
+                    }  
+                document.getElementById("btn-psw3").onclick=function(){time(this);}  
+                </script>  
+
+                                                                        </a>
+                                                                    </span>
+                                                                </p> 
+
+                                                                 <p class="user-name title3">
+                                                                    <span class="name"><label for="psw">新密码
+                                                                    ：</label></span>
+                                                                    <input type="text" name="text" id="text1" 
+                                                                    value="" placeholder="6位纯数字" 
+                                                                    required>
+                                                                 </p>
+                                                                 <p class="user-name title3">
+                                                                    <span class="name"><label for="psw">再次确
+                                                                    认：</label></span>
+                                                                    <input type="text" name="text" id="text1" 
+                                                                    value="" placeholder="" 
+                                                                    required>
+                                                                 </p>
+
+
+
+
+                                                            </div>
+                                                        </div>
+                                                        <!--以上是模态框中间内容-->
+                                                        <div class="foot">
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary"> 确定 </button>
+                                                                <span class="cancel">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal" style="width:100px;">取消 </button>
+                                                                </span>
+                                                             </div>
+                                                        </div>
+                                                        <!--以上是模态框底部按钮-->
+                                                    </div>
+                                                    <!-- /.modal-content --> 
+                                                </div>
+                                                <!-- /.modal --> 
+                                            </div>  
+                          <!--  以上是重置2模态框结构-->
+
+
+
+
+
                                 </div>
-                                <!-- /.modal --> 
-                            </div>  
-          <!--  以上是重置2模态框结构-->
-          
-         
+            </div>
             
-            
-            
-     		</div>
    		</div>
    </div>
-
-
-
-
 </body>
 </html>
