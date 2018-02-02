@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>口碑门店内容</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/forth-sub.css">
+<link rel="stylesheet" type="text/css" href="../css/praise-shop3.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+ 
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+	function aaa(data) {
+		var list = document.getElementsByTagName("li");
+		for(var i=0;i<list.length;i++){
+			list[i].className = '';
+		}
+		document.getElementById(data).className='active';		
+	}
+</script>
+</head>
+
+<body>
+<div class="container">
+	 <!-- 以下是口碑开店的标题-->
+        <div class="top-text">
+        	口碑开店
+        </div>
+       <!--以下是口碑开店步骤-->
+		<div class="am-u-sm-12 am-u-sm-centered status" style="width:90%;">
+    
+        <ul class="nav pointer-events">
+            <li id="stepone">
+                <a class="">
+                    <span>1</span>
+                    填写门店信息 
+                </a>
+            </li>
+            <li id="steptwo">
+                <a class="">
+                    <span>2</span>
+                    填写经营资料
+                </a>
+            </li>
+            <li id="stepthree">
+                <a class="active">
+                    <span>3</span>
+                    提交结果<i class="greenborder"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+	<!--第一行-->
+	<div class="row first-line">
+		<div class="col-xs-4"></div>
+		<div class="col-xs-4">
+			<img src="../img/error.png" width="90" height="90">
+		</div>
+		
+	</div>
+	<!--第二行-->
+	<div class="row second-line">
+		<div class="col-xs-4"></div>
+		<div class="col-xs-4">
+			操作失败
+		</div>
+		
+	</div>
+	<!--第三行-->
+	<div class="row third-line">
+		<div class="col-xs-4"></div>
+		<div class="col-xs-4">
+			失败原因：请填写门店名称
+		</div>
+		
+	</div>
+	<!--第四行-->
+	<div class="row third-line">
+		<div class="col-xs-4"></div>
+		<div class="col-xs-4">
+			<button type="button" class="btn btn-default" data-dismiss="modal"><a href="praise-shop2.html">上一步</a> </button>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>

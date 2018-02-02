@@ -423,3 +423,6 @@
         font-size: 12px;
         line-height: 12px;
 }
+
+.dropdown-menu {left: 200px !important;
+min-width: 114px !important;}

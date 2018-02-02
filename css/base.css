@@ -18,8 +18,9 @@ a {
 .clear {
  *zoom: 1;
 }
-#body {
+body {
 	width: 100%;
+	font-family: "Microsoft YaHei" !important;
 }
 .header1 {
 	width: 100%;
@@ -71,3 +72,4 @@ a {
 .padding-top-15 {
         padding-top: 15px!important;
 }
+ td{vertical-align:top;}

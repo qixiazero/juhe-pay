@@ -3,8 +3,8 @@
 .wrap{width:100%;}
 .content{width:1000px;background:#fff; margin:auto;}
 .top-text{ 
-width:100%;
-
+width:124% !important;
+  margin-left: -84px !important;
 margin:auto;
 padding-left:30px;
 border-bottom:1px solid #eee;
@@ -209,3 +209,53 @@ height:30px; line-height:30px; margin-top:20px; margin-left:20px; font-size:18px
 .sub-forth{margin-top:20px;}
 .sub-forth>.col-xs-3 input{height:40px !important; border-radius:5px !important;
 border:1px solid #ddd; width:200px;}
+
+.row>.col-xs-3 select{height:40px; line-height:40px;}
+.sub-three1{margin-bottom:40px !important;
+margin-top:40px;}
+.sub-three1>.col-xs-3{width:150px; }
+
+.bs-example input{height:40px;line-height:40px;}
+.bs-example button{height:40px;}
+.btn{height:40px; line-height:40px;}
+.addres{margin-top:20px; margin-bottom:40px;}
+.container{border-top:hidden; border-bottom:hidden;width:870px !important; margin-bottom:40px;}
+
+.addres-2>.col-xs-10{font-size:12px;color:#666; margin-top:-30px; margin-bottom:40px;}
+.addres-2>.col-xs-10 a{font-size:12px;}
+.addres-3>.col-xs-8{margin-top:-30px;}
+
+.sub-third-2>.col-xs-10{margin-top:5px; font-size:12px; color:#666;}
+.sub-picture>.col-xs-10{color:orange; font-size:12px; margin-top:-10px; margin-bottom:20px;}
+
+.picture1{border:1px dashed #666;}
+.door-picture>.col-xs-2{padding-left:0; padding-right:10px;}
+.door-picture>.col-xs-5 span{border:1px dashed #666; font-size:12px; color:#1188f6; 
+height:40px; line-height:40px; padding:8px 10px; cursor:pointer;  }
+.door-picture>.col-xs-4{color:#1188f6; height:40px; line-height:40px; cursor:pointer;}
+.door-picture2>.col-xs-10{font-size:12px !important; color:#666 !important;}
+.door-picture3>.col-xs-10{color:orange;}
+.door-picture a{font-size:12px; color:#1188f6;}
+
+
+
+.door-tel>.col-xs-3 input{height:40px !important; border-radius:5px !important;
+border:1px solid #ddd; width:200px;}
+.door-tel>.col-xs-3 span{font-size:14px; height:40px; line-height:40px; color:#1188f6; !important;}
+.door-tel2>.col-xs-10{font-size:12px; color:#666; margin-top:5px;}
+
+.yytime label{font-size:14px; color:#666; height:40px; line-height:40px; font-weight:normal;}
+
+.yytime2>.col-xs-4 input{width:200px;padding:8px; border-radius:5px;
+border:1px solid #ddd;}
+.yytime2>.col-xs-1{color:#1188f6;height:40px; line-height:40px; cursor:pointer;}
+.people-money input{width:480px; height:40px; line-height:40px; border-radius:5px;
+border:1px solid #ddd;}
+.people-money{margin-top:20px; margin-bottom:20px;}
+.people-money span{margin-left:-40px;}
+.service>.col-xs-2{padding-left:0;}
+.service>.col-xs-10 label{font-weight:normal; color:#666; height:40px; line-height:40px;
+margin-right:20px;}
+
+.sign-btn a{color:#fff;}
+.btn2 a{color:#1188f6;}
